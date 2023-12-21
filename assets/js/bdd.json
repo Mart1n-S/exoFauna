@@ -1,0 +1,43 @@
+{
+    "articles": [
+      {
+        "id": 1,
+        "title": "",
+        "description": "",
+        "price": 0,
+        "discount": 0,
+        "images": [
+          "",
+          "",
+          ""
+        ],
+        "category": "",
+        "sub_category": "",
+        "features": {
+          "feature1": "",
+          "feature2": ""
+          
+        }
+      },
+      {
+        "id": 2,
+        "title": "",
+        "description": "",
+        "price": 0,
+        "discount": 0,
+        "images": [
+          "",
+          "",
+          ""
+        ],
+        "category": "",
+        "sub_category": "",
+        "features": {
+          "feature1": "",
+          "feature2": ""
+          
+        }
+      }
+    ]
+  }
+  
