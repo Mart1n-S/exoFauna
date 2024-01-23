@@ -1,43 +1,184 @@
 {
-    "articles": [
-      {
-        "id": 1,
-        "title": "",
-        "description": "",
-        "price": 0,
-        "discount": 0,
-        "images": [
-          "",
-          "",
-          ""
-        ],
-        "category": "",
-        "sub_category": "",
-        "features": {
-          "feature1": "",
-          "feature2": ""
-          
-        }
-      },
-      {
-        "id": 2,
-        "title": "",
-        "description": "",
-        "price": 0,
-        "discount": 0,
-        "images": [
-          "",
-          "",
-          ""
-        ],
-        "category": "",
-        "sub_category": "",
-        "features": {
-          "feature1": "",
-          "feature2": ""
-          
-        }
+  "articles": [
+    {
+      "id": 1,
+      "title": "Dendrobates leucomelas",
+      "description": "Cette grenouille est une des plus communes Dendrobates en terrarium. C'est un bon choix pour débuter avec ces grenouilles. En terrarium, les toxines propres à l'espèce disparaissent faute d'un régime alimentaire similaire à celui de leur forêt tropicale du Venezuela et Guyana.",
+      "price": 75.00,
+      "discount": 5.00,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "category": "Amphibiens",
+      "sub_category": "terrestre",
+      "features": {
+        "feature1": "juvénile",
+        "feature2": "jaune"
       }
-    ]
-  }
-  
+    },
+    {
+      "id": 2,
+      "title": "Ceratophrys cranwelli",
+      "description": "Les américains la surnomment grenouille Pacman en rapport avec l'appétit glouton dont elle fait preuve. Habitant l'Argentine, le Paraguay et l'Uruguay, c'est un amphibien peu mobile. Reproduite régulièrement en captivité, elle doit être isolée de tout autre animal. Attention à ne pas sur-nourrir les adultes.",
+      "price": 32.00,
+      "discount": 0,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "category": "Amphibiens",
+      "sub_category": "terrestre",
+      "features": {
+        "feature1": "juvénile",
+        "feature2": "vert"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Agalychnis (Pachymedusa) dacnicolor",
+      "description": "L'adulte mesure jusqu'à 100 mm de longueur, avec une couleur dorsale globale verte avec des taches blanches éparses. Le ventre est blanc avec les pattes et les doigts orange. Cette espèce a des orteils élargis et des yeux dorés, et les femelles sont plus grandes que les mâles.",
+      "price": 79.00,
+      "discount": 5.00,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "category": "Amphibiens",
+      "sub_category": "terrestre",
+      "features": {
+        "feature1": "juvénile",
+        "feature2": "vert"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Dendrobates auratus, microspot",
+      "description": "Cette grenouille est une des plus communes Dendrobates en terrarium. C'est un bon choix pour débuter avec ces grenouilles bien qu'elle soit assez timide. En captivité, les toxines propres à l'espèce disparaissent faute d'un régime alimentaire similaire à celui de leur forêt tropicale du Nicaragua à la Colombie.",
+      "price": 69.00,
+      "discount": 0,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "category": "Amphibiens",
+      "sub_category": "terrestre",
+      "features": {
+        "feature1": "adulte",
+        "feature2": "bleu"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Theloderma horridum",
+      "description": "Theloderma horridum est une espèce de grenouille mousse que l'on retrouve en Malaisie ainsi qu'au Sud Thaïlande. Son aspect particulièrement verruqueux ainsi que sa coloration lui permettent de passer inaperçu lorsqu'elle est sur un arbre ou une écorce. Cette dernière ne repasse que rarement les 5 cm.",
+      "price": 175.00,
+      "discount": 10.00,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "category": "Amphibiens",
+      "sub_category": "terrestre",
+      "features": {
+        "feature1": "adulte",
+        "feature2": "marron"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Kaloula pulchra, ivory",
+      "description": "Kaloula pulchra est une grenouille d'environ 8 cm à l'apparence particulière : le corps est rond et la tête petite avec des yeux globuleux. Ses pattes puissantes lui permettent de se déplacer en courant car cette grenouille ne saute pas.",
+      "price": 950.00,
+      "discount": 0,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "category": "Amphibiens",
+      "sub_category": "aquatique",
+      "features": {
+        "feature1": "adulte",
+        "feature2": "marron"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Ambystoma mexicanum (axolotl), leucistique",
+      "description": "Cette espèce très prisée en captivité est aisée à maintenir. On placera les jeunes dans un aquarium avec une eau à 18-20°C (attention à ne pas dépasser 25°C). On les nourrira avec des granulés adaptés ainsi que des vers de terre. L'axolotl étant un animal solitaire et particulièrement vorace, il sera préférable de le maintenir seul.",
+      "price": 59.00,
+      "discount": 15.00,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "category": "Amphibiens",
+      "sub_category": "aquatique",
+      "features": {
+        "feature1": "adulte",
+        "feature2": "noir"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Pipa parva",
+      "description": "Cette petite espèce de Pipa est apparue récemment en élevage. Cette espèce provient originellement de Colombie et du Venezuela. Comme tous les Pipa, les œufs éclosent sur le dos, puis les têtards continuent leur cycle de développement dans l'eau à la différence de Pipa pipa.",
+      "price": 45.00,
+      "discount": 5.00,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "category": "Amphibiens",
+      "sub_category": "aquatique",
+      "features": {
+        "feature1": "adulte",
+        "feature2": "marron"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Phrynoidis (Bufo) asper",
+      "description": "Ce crapaud asiatique est une grande espèce de milieu forestier. Toujours proche de l'eau, il a besoin de beaucoup d'humidité dans un vaste terrarium. Calme le jour, c'est un amphibien actif dès la nuit venue.",
+      "price": 69.00,
+      "discount": 0,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "category": "Amphibiens",
+      "sub_category": "aquatique",
+      "features": {
+        "feature1": "adulte",
+        "feature2": "marron"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Pleurodeles waltl",
+      "description": "Le Pleurodèle de Walt est un massif triton aquatique originaire d'Espagne. Toujours élevé en captivité, c'est une espèce commune en aquarium. C'est le plus grand triton d'Europe : il peut atteindre 30 cm en liberté, et 20 cm en captivité. ",
+      "price": 39.00,
+      "discount": 0,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "category": "Amphibiens",
+      "sub_category": "aquatique",
+      "features": {
+        "feature1": "adulte",
+        "feature2": "marron"
+      }
+    }
+  ]
+}
