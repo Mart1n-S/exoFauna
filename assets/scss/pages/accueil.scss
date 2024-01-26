@@ -1,0 +1,63 @@
+.amphibiens {
+  &Description {
+    font-family: var(--font-family-1);
+    text-align: center;
+    margin: 64px 0 32px 0;
+  }
+  &Container {
+    display: flex;
+    padding: 0 64px;
+    &Image {
+      background-color: var(--bg-color-green-light);
+      padding: 12px;
+      border-radius: 4px;
+      font-family: var(--font-family-1);
+      margin: 0 32px;
+      &Card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        &Photo {
+          width: 100%;
+        }
+        &Boutton {
+          padding: 8px;
+          border-radius: 4px;
+          color: var(--color-text-white);
+          background-color: var(--color-text-green-flash);
+          box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.15);
+          &:hover{
+            cursor: pointer;
+            background-color: #009600;
+          }
+        }
+        &Lien {
+          padding: 8px;
+          border-radius: 4px;
+          color: var(--color-text-black);
+          background-color: var(--bg-color-white);
+          box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.15);
+          &:hover{
+            background-color: rgb(233, 233, 233);
+          }
+        }
+      }
+    }
+  }
+}
+
+//Modification Slick
+.slick-prev {
+  left: 32px;
+}
+
+.slick-next {
+  right: 32px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  color: var(--bg-color-green);
+}

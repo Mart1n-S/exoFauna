@@ -7,7 +7,7 @@
   
   .header {
     background-color: var(--bg-color-green);
-    color: var(--color-text-on-bg-green);
+    color: var(--color-text-white);
     padding: 16px 32px;
   
     &Navigation {
@@ -33,7 +33,7 @@
         align-items: center;
         font-family: var(--font-family-1);
         &Text {
-          color: var(--color-text-on-bg-green);
+          color: var(--color-text-white);
           &:hover {
             color: var(--color-text-muted);
           }

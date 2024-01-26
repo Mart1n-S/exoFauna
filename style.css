@@ -1,7 +1,11 @@
 :root {
-  --color-text-on-bg-green: #fff;
+  --color-text-white: #fff;
+  --color-text-black: #000000;
   --color-text-muted: #c3c3c3;
-  --bg-color-green: #30A46C;
+  --color-text-green-flash: #03c703;
+  --bg-color-green: #30a46c;
+  --bg-color-white: #fff;
+  --bg-color-green-light: #30a46c57;
   --font-family-1: "Manrope", Helvetica;
 }
 
@@ -14,7 +18,7 @@
 
 .header {
   background-color: var(--bg-color-green);
-  color: var(--color-text-on-bg-green);
+  color: var(--color-text-white);
   padding: 16px 32px;
 }
 .headerNavigation {
@@ -40,10 +44,71 @@
   font-family: var(--font-family-1);
 }
 .headerNavigationLinksText {
-  color: var(--color-text-on-bg-green);
+  color: var(--color-text-white);
 }
 .headerNavigationLinksText:hover {
   color: var(--color-text-muted);
+}
+
+.amphibiensDescription {
+  font-family: var(--font-family-1);
+  text-align: center;
+  margin: 64px 0 32px 0;
+}
+.amphibiensContainer {
+  display: flex;
+  padding: 0 64px;
+}
+.amphibiensContainerImage {
+  background-color: var(--bg-color-green-light);
+  padding: 12px;
+  border-radius: 4px;
+  font-family: var(--font-family-1);
+  margin: 0 32px;
+}
+.amphibiensContainerImageCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.amphibiensContainerImageCardPhoto {
+  width: 100%;
+}
+.amphibiensContainerImageCardBoutton {
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--color-text-white);
+  background-color: var(--color-text-green-flash);
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.15);
+}
+.amphibiensContainerImageCardBoutton:hover {
+  cursor: pointer;
+  background-color: #009600;
+}
+.amphibiensContainerImageCardLien {
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--color-text-black);
+  background-color: var(--bg-color-white);
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.15);
+}
+.amphibiensContainerImageCardLien:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.slick-prev {
+  left: 32px;
+}
+
+.slick-next {
+  right: 32px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  color: var(--bg-color-green);
 }
 
 /*# sourceMappingURL=style.css.map */
