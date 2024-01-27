@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-text-white: #fff;
   --color-text-black: #000000;
@@ -7,6 +8,36 @@
   --bg-color-white: #fff;
   --bg-color-green-light: #30a46c57;
   --font-family-1: "Manrope", Helvetica;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ajustez la taille des icônes selon vos besoins */
+.social-icons i {
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 * {
