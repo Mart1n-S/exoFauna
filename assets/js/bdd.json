@@ -1,184 +1,701 @@
 {
-  "articles": [
-    {
-      "id": 1,
-      "title": "Dendrobates leucomelas",
-      "description": "Cette grenouille est une des plus communes Dendrobates en terrarium. C'est un bon choix pour débuter avec ces grenouilles. En terrarium, les toxines propres à l'espèce disparaissent faute d'un régime alimentaire similaire à celui de leur forêt tropicale du Venezuela et Guyana.",
-      "price": 75.00,
-      "discount": 5.00,
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "category": "Amphibiens",
-      "sub_category": "terrestre",
-      "features": {
-        "feature1": "juvénile",
-        "feature2": "jaune"
+  "articles": {
+    "amphibiens": [
+      {
+        "id": 1,
+        "title": "Dendrobates leucomelas",
+        "description": "Cette grenouille est une des plus communes Dendrobates en terrarium. C'est un bon choix pour débuter avec ces grenouilles. En terrarium, les toxines propres à l'espèce disparaissent faute d'un régime alimentaire similaire à celui de leur forêt tropicale du Venezuela et Guyana.",
+        "price": 75.00,
+        "discount": 5.00,
+        "images": [
+          "./assets/images/Amphibiens/Terrestre/leucomelas1.jpg",
+          "./assets/images/Amphibiens/Terrestre/leucomelas2.jpg",
+          "./assets/images/Amphibiens/Terrestre/leucomelas3.jpg"
+        ],
+        "category": "Amphibiens",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Ceratophrys cranwelli",
+        "description": "Les américains la surnomment grenouille Pacman en rapport avec l'appétit glouton dont elle fait preuve. Habitant l'Argentine, le Paraguay et l'Uruguay, c'est un amphibien peu mobile. Reproduite régulièrement en captivité, elle doit être isolée de tout autre animal. Attention à ne pas sur-nourrir les adultes.",
+        "price": 32.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Amphibiens/Terrestre/ceratophrys1.jpg",
+          "./assets/images/Amphibiens/Terrestre/ceratophrys2.jpg",
+          "./assets/images/Amphibiens/Terrestre/ceratophrys3.jpg"
+        ],
+        "category": "Amphibiens",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Agalychnis dacnicolor",
+        "description": "L'adulte mesure jusqu'à 100 mm de longueur, avec une couleur dorsale globale verte avec des taches blanches éparses. Le ventre est blanc avec les pattes et les doigts orange. Cette espèce a des orteils élargis et des yeux dorés, et les femelles sont plus grandes que les mâles.",
+        "price": 79.00,
+        "discount": 5.00,
+        "images": [
+          "./assets/images/Amphibiens/Terrestre/agalychnis1.jpg",
+          "./assets/images/Amphibiens/Terrestre/agalychnis2.jpg",
+          "./assets/images/Amphibiens/Terrestre/agalychnis3.jpg"
+        ],
+        "category": "Amphibiens",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Dendrobates auratus",
+        "description": "Cette grenouille est une des plus communes Dendrobates en terrarium. C'est un bon choix pour débuter avec ces grenouilles bien qu'elle soit assez timide. En captivité, les toxines propres à l'espèce disparaissent faute d'un régime alimentaire similaire à celui de leur forêt tropicale du Nicaragua à la Colombie.",
+        "price": 69.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Amphibiens/Terrestre/auratus1.jpg",
+          "./assets/images/Amphibiens/Terrestre/auratus2.jpg",
+          "./assets/images/Amphibiens/Terrestre/auratus3.jpg"
+        ],
+        "category": "Amphibiens",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Theloderma horridum",
+        "description": "Theloderma horridum est une espèce de grenouille mousse que l'on retrouve en Malaisie ainsi qu'au Sud Thaïlande. Son aspect particulièrement verruqueux ainsi que sa coloration lui permettent de passer inaperçu lorsqu'elle est sur un arbre ou une écorce. Cette dernière ne repasse que rarement les 5 cm.",
+        "price": 175.00,
+        "discount": 10.00,
+        "images": [
+          "./assets/images/Amphibiens/Terrestre/theloderma1.jpg",
+          "./assets/images/Amphibiens/Terrestre/theloderma2.jpg",
+          "./assets/images/Amphibiens/Terrestre/theloderma3.jpg"
+        ],
+        "category": "Amphibiens",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 6,
+        "title": "Kaloula pulchra",
+        "description": "Kaloula pulchra est une grenouille d'environ 8 cm à l'apparence particulière : le corps est rond et la tête petite avec des yeux globuleux. Ses pattes puissantes lui permettent de se déplacer en courant car cette grenouille ne saute pas.",
+        "price": 950.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Amphibiens/Aquatique/Kaloula1.jpg",
+          "./assets/images/Amphibiens/Aquatique/Kaloula2.jpg",
+          "./assets/images/Amphibiens/Aquatique/Kaloula3.jpg"
+        ],
+        "category": "Amphibiens",
+        "sub_category": "aquatique",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 7,
+        "title": "Axolotl copper",
+        "description": "Cette espèce très prisée en captivité est aisée à maintenir. On placera les jeunes dans un aquarium avec une eau à 18-20°C (attention à ne pas dépasser 25°C). On les nourrira avec des granulés adaptés ainsi que des vers de terre. L'axolotl étant un animal solitaire et particulièrement vorace, il sera préférable de le maintenir seul.",
+        "price": 59.00,
+        "discount": 15.00,
+        "images": [
+          "./assets/images/Amphibiens/Aquatique/axolotl1.jpg",
+          "./assets/images/Amphibiens/Aquatique/axolotl2.jpg",
+          "./assets/images/Amphibiens/Aquatique/axolotl3.jpg"
+        ],
+        "category": "Amphibiens",
+        "sub_category": "aquatique",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 8,
+        "title": "Pipa parva",
+        "description": "Cette petite espèce de Pipa est apparue récemment en élevage. Cette espèce provient originellement de Colombie et du Venezuela. Comme tous les Pipa, les œufs éclosent sur le dos, puis les têtards continuent leur cycle de développement dans l'eau à la différence de Pipa pipa.",
+        "price": 45.00,
+        "discount": 5.00,
+        "images": [
+          "./assets/images/Amphibiens/Aquatique/pipa1.jpg",
+          "./assets/images/Amphibiens/Aquatique/pipa2.jpg",
+          "./assets/images/Amphibiens/Aquatique/pipa3.jpg"
+        ],
+        "category": "Amphibiens",
+        "sub_category": "aquatique",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 9,
+        "title": "Phrynoidis asper",
+        "description": "Ce crapaud asiatique est une grande espèce de milieu forestier. Toujours proche de l'eau, il a besoin de beaucoup d'humidité dans un vaste terrarium. Calme le jour, c'est un amphibien actif dès la nuit venue.",
+        "price": 69.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Amphibiens/Aquatique/bufo1.jpg",
+          "./assets/images/Amphibiens/Aquatique/bufo2.jpg",
+          "./assets/images/Amphibiens/Aquatique/bufo3.jpg"
+        ],
+        "category": "Amphibiens",
+        "sub_category": "aquatique",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 10,
+        "title": "Pleurodeles waltl",
+        "description": "Le Pleurodèle de Walt est un massif triton aquatique originaire d'Espagne. Toujours élevé en captivité, c'est une espèce commune en aquarium. C'est le plus grand triton d'Europe : il peut atteindre 30 cm en liberté, et 20 cm en captivité. ",
+        "price": 39.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Amphibiens/Aquatique/walt1.jpg",
+          "./assets/images/Amphibiens/Aquatique/walt2.jpg",
+          "./assets/images/Amphibiens/Aquatique/walt3.jpg"
+        ],
+        "category": "Amphibiens",
+        "sub_category": "aquatique",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "mâle"
+        }
       }
-    },
-    {
-      "id": 2,
-      "title": "Ceratophrys cranwelli",
-      "description": "Les américains la surnomment grenouille Pacman en rapport avec l'appétit glouton dont elle fait preuve. Habitant l'Argentine, le Paraguay et l'Uruguay, c'est un amphibien peu mobile. Reproduite régulièrement en captivité, elle doit être isolée de tout autre animal. Attention à ne pas sur-nourrir les adultes.",
-      "price": 32.00,
-      "discount": 0,
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "category": "Amphibiens",
-      "sub_category": "terrestre",
-      "features": {
-        "feature1": "juvénile",
-        "feature2": "vert"
+
+    ],
+    "serpents": [
+      {
+        "id": 11,
+        "title": "Morelia Viridis",
+        "description": "Morelia viridis (anciennement Chondropython viridis), ou le python vert, est un serpent arboricole originaire des forêts tropicales denses de Papouasie-Nouvelle-Guinée, d'Indonésie et du nord de l'Australie. Il est devenu très prisé des terrariophiles en raison de sa beauté et de la grande variété de coloris existants, qui diffèrent selon la localité d'où l'animal provient.",
+        "price": 1150.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Serpents/Arboricole/morelia1.jpg",
+          "./assets/images/Serpents/Arboricole/morelia2.jpg",
+          "./assets/images/Serpents/Arboricole/morelia3.jpg"
+        ],
+        "category": "Serpents",
+        "sub_category": "arboricole",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 12,
+        "title": "Opheodrys aestivus",
+        "description": "Opheodrys aestivus est une petite couleuvre du sud-est des États-Unis, qui possède une particularité étonnante dans le monde des serpents : en effet, c'est une espèce insectivore ! Principalement arboricole, cette couleuvre occupe généralement les abords des forêts, souvent près des points d'eau, et se nourrit de toutes sortes d'arthropodes et de vers.",
+        "price": 125.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Serpents/Arboricole/opheodrys1.jpg",
+          "./assets/images/Serpents/Arboricole/opheodrys2.jpg",
+          "./assets/images/Serpents/Arboricole/opheodrys3.jpg"                   
+        ],
+        "category": "Serpents",
+        "sub_category": "arboricole",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 13,
+        "title": "Philothamnus",
+        "description": "Ce serpent vert arboricole africain peut atteindre une taille variant de 90 à 130 cm adulte. Il peut être problématique à nourrir et doit être réservé aux amateurs consciencieux. Le terrarium doit être spacieux, bien fourni en branchages et de type arboricole tropical.",
+        "price": 49.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Serpents/Arboricole/philothamnus1.jpg",
+          "./assets/images/Serpents/Arboricole/philothamnus2.jpg",
+          "./assets/images/Serpents/Arboricole/philothamnus3.jpg"                   
+        ],
+        "category": "Serpents",
+        "sub_category": "arboricole",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 14,
+        "title": "Pareas carinatus",
+        "description": "Cette couleuvre arboricole vit dans les forêts primaires du sud-est asiatique à faible altitude. Cette espèce se nourrit exclusivement d'escargots vivants. Un peu farouche, convient plutôt aux éleveurs aguerris.",
+        "price": 125.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Serpents/Arboricole/pareas1.jpg",
+          "./assets/images/Serpents/Arboricole/pareas2.jpg",
+          "./assets/images/Serpents/Arboricole/pareas3.jpg"                   
+        ],
+        "category": "Serpents",
+        "sub_category": "arboricole",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 15,
+        "title": "Chrysopelea paradisi",
+        "description": "Chrysopelea paradisi est une couleuvre arboricole d'environ 100 cm habitant la canopée des forêts d'Asie du sud-est. Fréquente, on la trouve même parfois dans les parcs et jardins. Comme toutes les espèces du genre, elle possède la faculté étonnante de réaliser des 'sauts planés' entre 2 branches, en aplatissant son corps par écartement des côtes pour augmenter sa portance dans l'air.",
+        "price": 245.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Serpents/Arboricole/chrysopelea1.jpg",
+          "./assets/images/Serpents/Arboricole/chrysopelea2.jpg",
+          "./assets/images/Serpents/Arboricole/chrysopelea3.jpg"                   
+        ],
+        "category": "Serpents",
+        "sub_category": "arboricole",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 16,
+        "title": "Boa constrictor",
+        "description": "Ce boa constrictor atteint une moyenne de 215 cm à taille adulte, mais peut atteindre 300 cm. Plus rare, elle est aussi plus sensible d'élevage que Boa c. imperator. Les spécimens de cette espèce sont généralement assez défensifs.",
+        "price": 395.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Serpents/Terrestre/boa1.jpg",
+          "./assets/images/Serpents/Terrestre/boa2.jpg",
+          "./assets/images/Serpents/Terrestre/boa3.jpg" 
+        ],
+        "category": "Serpents",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 17,
+        "title": "Heterodon nasicus",
+        "description": "Heterodon nasicus est une petite couleuvre (50 à 90 cm) originaire des prairies sablonneuses d'Amérique du Nord dont l'apparence trapue rappelle celle d'un serpent venimeux. S'il possède bien un venin dans la salive, celui-ci est inoffensif pour l'homme. Une écaille unique relevée sur le bout de son rostre, faisant penser au groin d'un cochon, lui permet de fouiller le sol à la recherche de crapauds dont il se nourrit en majorité.",
+        "price": 245.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Serpents/Terrestre/heterodon1.jpg",
+          "./assets/images/Serpents/Terrestre/heterodon2.jpg",
+          "./assets/images/Serpents/Terrestre/heterodon3.jpg" 
+        ],
+        "category": "Serpents",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 18,
+        "title": "Eryx loveridgei",
+        "description": "Cette espèce originaire d'Asie Centrale (de l'Iran à la Chine) est une des plus petites du genre, avec une longueur de 60 cm maximum pour les grandes femelles. Moins répandue en terrariophilie que d'autres Eryx, c'est une espèce intéressante qui gagne à être plus connue.",
+        "price": 175.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Serpents/Terrestre/eryx1.jpg",
+          "./assets/images/Serpents/Terrestre/eryx2.jpg",
+          "./assets/images/Serpents/Terrestre/eryx3.jpg" 
+        ],
+        "category": "Serpents",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 19,
+        "title": "Lampropeltis triangulum",
+        "description": "C'est un serpent fréquemment reproduit en captivité, et dont l'élevage est plutôt aisé. On pourra le placer dans un terrarium d'environ 80 cm avec un point chaud à 30°C et une zone plus fraîche à 24-25°C, ainsi qu'une hygrométrie d'environ 70%. Il se nourrira sans problème de rongeurs congelés. Il est préférable de maintenir les individus séparément en raison de leur comportement ophiophage.",
+        "price": 195.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Serpents/Terrestre/lampropeltis1.jpg",
+          "./assets/images/Serpents/Terrestre/lampropeltis2.jpg",
+          "./assets/images/Serpents/Terrestre/lampropeltis3.jpg" 
+        ],
+        "category": "Serpents",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 20,
+        "title": "Pantherophis guttatus",
+        "description": "Cette espèce est probablement le serpent le plus souvent reproduit chez les terrariophiles. Un changement de classification place désormais cette couleuvre américaine dans le genre Pantherophis, il faut donc désormais parler de Pantherophis guttatus (anciennement Elaphe guttata)",
+        "price": 45.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Serpents/Terrestre/pantherophis1.jpg",
+          "./assets/images/Serpents/Terrestre/pantherophis2.jpg",
+          "./assets/images/Serpents/Terrestre/pantherophis3.jpg" 
+        ],
+        "category": "Serpents",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "femelle"
+        }
       }
-    },
-    {
-      "id": 3,
-      "title": "Agalychnis (Pachymedusa) dacnicolor",
-      "description": "L'adulte mesure jusqu'à 100 mm de longueur, avec une couleur dorsale globale verte avec des taches blanches éparses. Le ventre est blanc avec les pattes et les doigts orange. Cette espèce a des orteils élargis et des yeux dorés, et les femelles sont plus grandes que les mâles.",
-      "price": 79.00,
-      "discount": 5.00,
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "category": "Amphibiens",
-      "sub_category": "terrestre",
-      "features": {
-        "feature1": "juvénile",
-        "feature2": "vert"
+
+    ],
+    "invertebres":[
+      {
+        "id": 21,
+        "title": "Anadenobolus",
+        "description": "Cette espèce de mille-pattes est une espèce originaire des Caraïbes ayant colonisé plusieurs pays américains. C'est une espèce relativement petite de 4-5 cm, se nourrissant aisément en captivité de fruits et végétaux.",
+        "price": 4.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Invertebres/Terrestre/anadenobolus1.jpg",
+          "./assets/images/Invertebres/Terrestre/anadenobolus2.jpg",
+          "./assets/images/Invertebres/Terrestre/anadenobolus3.jpg"
+        ],
+        "category": "Invertebres",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 22,
+        "title": "Anthia sexmaculata",
+        "description": "Ces scarabées insectivores africains sont capables de sécréter un liquide irritant lorsqu'ils sont menacés. Une température de 25 à 32°C et une hygrométrie très faible sont nécessaires. Facile à maintenir.",
+        "price": 18.50,
+        "discount": 0,
+        "images": [
+          "./assets/images/Invertebres/Terrestre/anthia1.jpg",
+          "./assets/images/Invertebres/Terrestre/anthia2.jpg",
+          "./assets/images/Invertebres/Terrestre/anthia3.jpg"
+        ],
+        "category": "Invertebres",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 23,
+        "title": "Armadillidium",
+        "description": "Les cloportes sont des crustacés détritivores idéaux pour les terrariums bioactifs, ils décomposent la matière organique telle que les feuilles mortes, les restes de nourriture, les mues, les déjections.",
+        "price": 18.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Invertebres/Terrestre/armadillidium1.jpg",
+          "./assets/images/Invertebres/Terrestre/armadillidium2.jpg",
+          "./assets/images/Invertebres/Terrestre/armadillidium3.jpg"
+        ],
+        "category": "Invertebres",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 24,
+        "title": "Phidippus regius",
+        "description": "On peut trouver cette espèce aux États-Unis, en Floride, Bahamas, ou encore aux Antilles. Elle peut mesurer jusqu'à 2 cm à taille adulte. Sa robe varie en fonction du sexe et de la localité. Très facile à maintenir.",
+        "price": 50.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Invertebres/Terrestre/phidippus1.jpg",
+          "./assets/images/Invertebres/Terrestre/phidippus2.jpg",
+          "./assets/images/Invertebres/Terrestre/phidippus3.jpg"
+        ],
+        "category": "Invertebres",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 25,
+        "title": "Lissachatina fulica",
+        "description": "Cette espèce est très facile de maintien et peu exigeante dès qu'on lui offre un habitat humide. Elle fait partie des escargots dits 'géants d'Afrique'. Parfait pour ceux qui débutent en terrariophilie.",
+        "price": 4.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Invertebres/Terrestre/lissachatina1.jpg",
+          "./assets/images/Invertebres/Terrestre/lissachatina2.jpg",
+          "./assets/images/Invertebres/Terrestre/lissachatina3.jpg"
+        ],
+        "category": "Invertebres",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 26,
+        "title": "Hymenopus coronatus",
+        "description": "Cette espèce mesure de 3 à 6 cm. Elle se caractérise par l'éclat de ses couleurs semblable à une fleur blanc-crème et une structure finement adaptée pour le camouflage. Les quatre pattes ressemblent à des pétales de fleurs, imitant celles d'une orchidée.",
+        "price": 35.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Invertebres/Arboricole/hymenopus1.jpg",
+          "./assets/images/Invertebres/Arboricole/hymenopus2.jpg",
+          "./assets/images/Invertebres/Arboricole/hymenopus3.jpg"
+        ],
+        "category": "Invertebres",
+        "sub_category": "arboricole",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 27,
+        "title": "Peruphasma schultei",
+        "description": "N'habitant que dans une minuscule réserve de 5 hectares (où il est maintenant protégé), il n'a été découvert qu'en 2002 et décrit seulement en 2005 ! Il a rapidement été très prisé des amateurs de phasmes en raison de son comportement actif et de son apparence particulière.",
+        "price": 8.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Invertebres/Arboricole/peruphasma1.jpg",
+          "./assets/images/Invertebres/Arboricole/peruphasma2.jpg",
+          "./assets/images/Invertebres/Arboricole/peruphasma3.jpg"
+        ],
+        "category": "Invertebres",
+        "sub_category": "arboricole",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 28,
+        "title": "Geosesarma dennerle",
+        "description": "Originaire de Java, cette espèce de Geosesarma est souvent un peu moins sociable que les autres crabes appartenant à ce genre. Un mâle et deux femelles cohabitent sans difficulté dans un terrarium de 30X30X30cm.",
+        "price": 19.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Invertebres/Aquatique/geosesarma1.jpg",
+          "./assets/images/Invertebres/Aquatique/geosesarma2.jpg",
+          "./assets/images/Invertebres/Aquatique/geosesarma3.jpg"
+        ],
+        "category": "Invertebres",
+        "sub_category": "aquatique",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "mâle"
+        }
       }
-    },
-    {
-      "id": 4,
-      "title": "Dendrobates auratus, microspot",
-      "description": "Cette grenouille est une des plus communes Dendrobates en terrarium. C'est un bon choix pour débuter avec ces grenouilles bien qu'elle soit assez timide. En captivité, les toxines propres à l'espèce disparaissent faute d'un régime alimentaire similaire à celui de leur forêt tropicale du Nicaragua à la Colombie.",
-      "price": 69.00,
-      "discount": 0,
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "category": "Amphibiens",
-      "sub_category": "terrestre",
-      "features": {
-        "feature1": "adulte",
-        "feature2": "bleu"
+    ],
+    "lezards": [
+      {
+        "id": 29,
+        "title": "Anolis sagrei",
+        "description": "L'anolis brun (Anolis sagrei) est une petite Iguanidae originaire des Caraïbes et maintenant introduite dans le sud-est des États-Unis. D'un comportement très proche de son cousin Anolis carolinensis, il est cependant souvent plus petit.",
+        "price": 19.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Lezards/Terrestre/anolis1.jpg",
+          "./assets/images/Lezards/Terrestre/anolis2.jpg",
+          "./assets/images/Lezards/Terrestre/anolis3.jpg"
+        ],
+        "category": "Lezards",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 30,
+        "title": "Eublepharis fuscus",
+        "description": "Eublepharis fuscus est un grand gecko de la famille des Eublepharis (gecko à paupières). D'un caractère timide, ce gecko nocturne ne sort que dans le noir complet. Il est insectivore. Facile pour l’élevage.",
+        "price": 145.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Lezards/Terrestre/eublepharis1.jpg",
+          "./assets/images/Lezards/Terrestre/eublepharis2.jpg",
+          "./assets/images/Lezards/Terrestre/eublepharis3.jpg"
+        ],
+        "category": "Lezards",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 31,
+        "title": "Pogona vitticeps",
+        "description": "Il n'y a plus besoin de le présenter, l'agame barbu est devenu extrêmement commun en une dizaine d'années. Sa curiosité naturelle mêlée à une maintenance facile l'a aisément promu comme étant le lézard le plus populaire.",
+        "price": 185.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Lezards/Terrestre/pogona1.jpg",
+          "./assets/images/Lezards/Terrestre/pogona2.jpg",
+          "./assets/images/Lezards/Terrestre/pogona3.jpg"
+        ],
+        "category": "Lezards",
+        "sub_category": "terrestre",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "mâle"
+        }
+      },
+      {
+        "id": 32,
+        "title": "Chamaeleo calyptratus",
+        "description": "Cette mutation 'piebald' chez le caméléon casqué est spécifique à une dépigmentation partielle de la peau et lui confère un aspect visuel des plus original. La principale caractéristique de ce grand caméléon est la présence d'un 'casque' sur le crâne, deux fois plus grand chez les mâles que chez les femelles, et pouvant atteindre 8 cm.",
+        "price": 99.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Lezards/Arboricole/chamaeleo1.jpg",
+          "./assets/images/Lezards/Arboricole/chamaeleo2.jpg",
+          "./assets/images/Lezards/Arboricole/chamaeleo3.jpg"
+        ],
+        "category": "Lezards",
+        "sub_category": "arboricole",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "femelle"
+        }
+      },
+      {
+        "id": 33,
+        "title": "Anolis carolinensis",
+        "description": "L'anolis vert (Anolis carolinensis) est un petit Iguanidae originaire des zones subtropicales du sud-est des États-Unis. Son apparence est typique des lézards du genre, avec un corps élancé et une tête triangulaire.",
+        "price": 69.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Lezards/Arboricole/carolinensis1.jpg",
+          "./assets/images/Lezards/Arboricole/carolinensis2.jpg",
+          "./assets/images/Lezards/Arboricole/carolinensis3.jpg"
+        ],
+        "category": "Lezards",
+        "sub_category": "arboricole",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "mâle"
+        }
       }
-    },
-    {
-      "id": 5,
-      "title": "Theloderma horridum",
-      "description": "Theloderma horridum est une espèce de grenouille mousse que l'on retrouve en Malaisie ainsi qu'au Sud Thaïlande. Son aspect particulièrement verruqueux ainsi que sa coloration lui permettent de passer inaperçu lorsqu'elle est sur un arbre ou une écorce. Cette dernière ne repasse que rarement les 5 cm.",
-      "price": 175.00,
-      "discount": 10.00,
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "category": "Amphibiens",
-      "sub_category": "terrestre",
-      "features": {
-        "feature1": "adulte",
-        "feature2": "marron"
-      }
-    },
-    {
-      "id": 6,
-      "title": "Kaloula pulchra, ivory",
-      "description": "Kaloula pulchra est une grenouille d'environ 8 cm à l'apparence particulière : le corps est rond et la tête petite avec des yeux globuleux. Ses pattes puissantes lui permettent de se déplacer en courant car cette grenouille ne saute pas.",
-      "price": 950.00,
-      "discount": 0,
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "category": "Amphibiens",
-      "sub_category": "aquatique",
-      "features": {
-        "feature1": "adulte",
-        "feature2": "marron"
-      }
-    },
-    {
-      "id": 7,
-      "title": "Ambystoma mexicanum (axolotl), leucistique",
-      "description": "Cette espèce très prisée en captivité est aisée à maintenir. On placera les jeunes dans un aquarium avec une eau à 18-20°C (attention à ne pas dépasser 25°C). On les nourrira avec des granulés adaptés ainsi que des vers de terre. L'axolotl étant un animal solitaire et particulièrement vorace, il sera préférable de le maintenir seul.",
-      "price": 59.00,
-      "discount": 15.00,
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "category": "Amphibiens",
-      "sub_category": "aquatique",
-      "features": {
-        "feature1": "adulte",
-        "feature2": "noir"
-      }
-    },
-    {
-      "id": 8,
-      "title": "Pipa parva",
-      "description": "Cette petite espèce de Pipa est apparue récemment en élevage. Cette espèce provient originellement de Colombie et du Venezuela. Comme tous les Pipa, les œufs éclosent sur le dos, puis les têtards continuent leur cycle de développement dans l'eau à la différence de Pipa pipa.",
-      "price": 45.00,
-      "discount": 5.00,
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "category": "Amphibiens",
-      "sub_category": "aquatique",
-      "features": {
-        "feature1": "adulte",
-        "feature2": "marron"
-      }
-    },
-    {
-      "id": 9,
-      "title": "Phrynoidis (Bufo) asper",
-      "description": "Ce crapaud asiatique est une grande espèce de milieu forestier. Toujours proche de l'eau, il a besoin de beaucoup d'humidité dans un vaste terrarium. Calme le jour, c'est un amphibien actif dès la nuit venue.",
-      "price": 69.00,
-      "discount": 0,
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "category": "Amphibiens",
-      "sub_category": "aquatique",
-      "features": {
-        "feature1": "adulte",
-        "feature2": "marron"
-      }
-    },
-    {
-      "id": 10,
-      "title": "Pleurodeles waltl",
-      "description": "Le Pleurodèle de Walt est un massif triton aquatique originaire d'Espagne. Toujours élevé en captivité, c'est une espèce commune en aquarium. C'est le plus grand triton d'Europe : il peut atteindre 30 cm en liberté, et 20 cm en captivité. ",
-      "price": 39.00,
-      "discount": 0,
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "category": "Amphibiens",
-      "sub_category": "aquatique",
-      "features": {
-        "feature1": "adulte",
-        "feature2": "marron"
-      }
-    }
-  ]
+    ],
+    "alimentation": [
+      {
+        "id": 34,
+        "title": "Blattes Red Runners",
+        "description": "Cette blatte est sans nul doute l'un des insectes préférés de tous les reptiles. Elle possède une excellente qualité nutritive et elle pourra donc être distribuée comme base alimentaire sans contre-indication.",
+        "price": 5.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Alimentation/Vivant/blattes1.jpg",
+          "./assets/images/Alimentation/Vivant/blattes2.jpg",
+          "./assets/images/Alimentation/Vivant/blattes3.jpg"
+        ],
+        "category": "Alimentation",
+        "sub_category": "vivant",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "100"
+        }
+      },
+      {
+        "id": 35,
+        "title": "Collemboles",
+        "description": "Les collemboles sont de très petits arthropodes qui atteignent en moyenne 2 à 3 mm. Ils vivent dans l'humus du sol et participent à la dégradation des matières vivantes en décomposition. Leur petite taille et leur fort pouvoir nutritionnel en font l'aliment idéal pour l'élevage des dendrobates.",
+        "price": 4.90,
+        "discount": 0,
+        "images": [
+          "./assets/images/Alimentation/Vivant/collemboles1.jpg",
+          "./assets/images/Alimentation/Vivant/collemboles2.jpg",
+          "./assets/images/Alimentation/Vivant/collemboles3.jpg"
+        ],
+        "category": "Alimentation",
+        "sub_category": "vivant",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "200"
+        }
+      },
+      {
+        "id": 36,
+        "title": "Grillons",
+        "description": "Le grillon, Achetae domestica, constitue la base alimentaire de nombreux reptiles et ce tout au long de leur vie. Nous vous proposons 5 tailles de grillons, afin de bien respecter les proportions insecte/animal.",
+        "price": 2.50,
+        "discount": 0,
+        "images": [
+          "./assets/images/Alimentation/Vivant/grillons1.jpg",
+          "./assets/images/Alimentation/Vivant/grillons2.jpg",
+          "./assets/images/Alimentation/Vivant/grillons3.jpg"
+        ],
+        "category": "Alimentation",
+        "sub_category": "vivant",
+        "features": {
+          "feature1": "juvénile",
+          "feature2": "100"
+        }
+      },
+      {
+        "id": 37,
+        "title": "Souris",
+        "description": "Les souris congelées sont une option nutritionnelle pratique et saine pour nourrir vos serpents. Préparées avec soin, ces souris de qualité offrent une source naturelle de protéines essentielles, contribuant ainsi à la croissance et à la santé de vos reptiles.",
+        "price": 30.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Alimentation/Congele/souris1.jpg",
+          "./assets/images/Alimentation/Congele/souris2.jpg",
+          "./assets/images/Alimentation/Congele/souris3.jpg"
+        ],
+        "category": "Alimentation",
+        "sub_category": "congele",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "10"
+        }
+      },
+      {
+        "id": 38,
+        "title": "Dragon Jelly Food",
+        "description": "Dragon Jelly food (exclusivement pour vos animaux adulte), en capsule de 16g, est une gelée de fruits délicieux, parfait pour insectes, reptiles, oiseaux et autres animaux frugivores. Il apportera tout ce dont vos animaux ont besoin. Conservé à l’abri de la lumière et de la chaleur.",
+        "price": 10.00,
+        "discount": 0,
+        "images": [
+          "./assets/images/Alimentation/Sec/jelly1.jpg",
+          "./assets/images/Alimentation/Sec/jelly2.jpg",
+          "./assets/images/Alimentation/Sec/jelly3.jpg"
+        ],
+        "category": "Alimentation",
+        "sub_category": "sec",
+        "features": {
+          "feature1": "adulte",
+          "feature2": "10"
+        }
+      }      
+    ]
+    
+  }
 }

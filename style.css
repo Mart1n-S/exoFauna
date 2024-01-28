@@ -1,11 +1,17 @@
 :root {
   --color-text-white: #fff;
   --color-text-black: #000000;
-  --color-text-muted: #c3c3c3;
+  --color-text-muted: #b4b4b4;
   --color-text-green-flash: #03c703;
+  --color-text-red: #ff0000;
+  --color-text-green-neon: #b7f700;
   --bg-color-green: #30a46c;
+  --bg-color-green-hover: #009600;
   --bg-color-white: #fff;
+  --bg-color-white-hover: #e9e9e9;
+  --bg-color-black: #000000;
   --bg-color-green-light: #30a46c57;
+  --bg-box-shadow: #00000026;
   --font-family-1: "Manrope", Helvetica;
 }
 
@@ -14,12 +20,13 @@
   padding: 0;
   border: 0;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .header {
   background-color: var(--bg-color-green);
   color: var(--color-text-white);
-  padding: 16px 32px;
+  padding: 16px 164px;
 }
 .headerNavigation {
   display: flex;
@@ -50,51 +57,177 @@
   color: var(--color-text-muted);
 }
 
-.amphibiensDescription {
+.topAccueil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family-1);
+  padding: 90px 64px;
+}
+.topAccueilNeonContainer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color-black);
+  height: 30px;
+  width: 70%;
+  margin-bottom: 128px;
+  border-radius: 4px;
+}
+.topAccueilNeonContainerText {
+  color: var(--color-text-green-neon);
+  font-size: 1.5em;
+  font-weight: bold;
+  position: absolute;
+  z-index: 2;
+}
+.topAccueilNeonContainerBlurred {
+  color: var(--color-text-green-neon);
+  font-size: 1.5em;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  filter: blur(2px);
+}
+.topAccueilContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.topAccueilContainerDescriptionTitle {
+  font-size: 4em;
+}
+.topAccueilContainerDescriptionSubTitle {
+  font-size: 1.1em;
+  margin-top: 24px;
+  line-height: 2em;
+}
+.topAccueilContainerDescriptionSubTitle strong {
+  font-weight: 600;
+}
+.topAccueilContainerDescriptionButton {
+  text-align: center;
+  margin-top: 64px;
+}
+.topAccueilContainerDescriptionButton a {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 4px;
+  color: var(--color-text-white);
+  background-color: var(--color-text-green-flash);
+  box-shadow: 3px 4px 4px 3px var(--bg-box-shadow);
+}
+.topAccueilContainerDescriptionButton a:hover {
+  background-color: var(--bg-color-green-hover);
+}
+
+.produits {
+  padding: 64px;
+}
+.produitsInformation {
+  font-family: var(--font-family-1);
+  color: var(--color-text-white);
+  background-color: var(--bg-color-green);
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: bold;
+  padding: 12px 0;
+  border-radius: 4px;
+}
+.produitsDescription {
   font-family: var(--font-family-1);
   text-align: center;
   margin: 64px 0 32px 0;
 }
-.amphibiensContainer {
+.produitsDescriptionTitle {
+  font-size: 2.6em;
+}
+.produitsDescriptionSubTitle {
+  font-weight: normal;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: 12px;
+}
+.produitsContainer {
   display: flex;
   padding: 0 64px;
 }
-.amphibiensContainerImage {
+.produitsContainerImage {
   background-color: var(--bg-color-green-light);
   padding: 12px;
   border-radius: 4px;
   font-family: var(--font-family-1);
   margin: 0 32px;
 }
-.amphibiensContainerImageCard {
+.produitsContainerImageCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
-.amphibiensContainerImageCardPhoto {
+.produitsContainerImageCardPhoto {
   width: 100%;
 }
-.amphibiensContainerImageCardBoutton {
+.produitsContainerImageCardTitre {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.produitsContainerImageCardPrix {
+  font-weight: bold;
+}
+.produitsContainerImageCardPrix > span:nth-child(1) {
+  text-decoration: line-through;
+  color: var(--color-text-red);
+}
+.produitsContainerImageCardPrix > span:nth-child(2) {
+  font-weight: bold;
+  color: var(--color-text-red);
+  margin: 0 8px;
+}
+.produitsContainerImageCardPrix > span:nth-child(3) {
+  font-weight: bold;
+}
+.produitsContainerImageCardBouton {
   padding: 8px;
+  font-size: 1em;
   border-radius: 4px;
   color: var(--color-text-white);
   background-color: var(--color-text-green-flash);
-  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
 }
-.amphibiensContainerImageCardBoutton:hover {
+.produitsContainerImageCardBouton:hover {
   cursor: pointer;
-  background-color: #009600;
+  background-color: var(--bg-color-green-hover);
 }
-.amphibiensContainerImageCardLien {
+.produitsContainerImageCardLien {
   padding: 8px;
   border-radius: 4px;
   color: var(--color-text-black);
   background-color: var(--bg-color-white);
-  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
 }
-.amphibiensContainerImageCardLien:hover {
-  background-color: rgb(233, 233, 233);
+.produitsContainerImageCardLien:hover {
+  background-color: var(--bg-color-white-hover);
+}
+.produitsCategorie {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+.produitsCategorieBouton {
+  font-family: var(--font-family-1);
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: var(--color-text-white);
+  background-color: var(--color-text-green-flash);
+  box-shadow: 3px 4px 4px 3px var(--bg-box-shadow);
+}
+.produitsCategorieBouton:hover {
+  background-color: var(--bg-color-green-hover);
 }
 
 .slick-prev {
@@ -107,7 +240,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-  font-size: 30px;
+  font-size: 1.9rem;
   color: var(--bg-color-green);
 }
 
