@@ -1,44 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-decoration: none;
-  }
-  
-  .header {
-    background-color: var(--bg-color-green);
-    color: var(--color-text-white);
-    padding: 16px 32px;
-  
-    &Navigation {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: var(--bg-color-green);
+  color: var(--color-text-white);
+  padding: 16px 164px;
+
+  &Navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &Logo {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
-  
-      &Logo {
-        display: flex;
-        align-items: center;
-        &Text {
-          font-family: var(--font-family-1);
-          font-size: 1.3em;
-          font-weight: bold;
-          margin-left: 12px;
-        }
-      }
-  
-      &Links {
-        display: flex;
-        gap: 40px;
-        align-items: center;
+      &Text {
         font-family: var(--font-family-1);
-        &Text {
-          color: var(--color-text-white);
-          &:hover {
-            color: var(--color-text-muted);
-          }
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-left: 12px;
+      }
+    }
+
+    &Links {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      font-family: var(--font-family-1);
+      &Text {
+        color: var(--color-text-white);
+        &:hover {
+          color: var(--color-text-muted);
         }
       }
     }
   }
-  
+}
