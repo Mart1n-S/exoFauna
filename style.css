@@ -168,6 +168,7 @@
 }
 .produitsContainerImageCardPhoto {
   width: 100%;
+  border-radius: 4px;
 }
 .produitsContainerImageCardTitre {
   text-align: center;
@@ -242,6 +243,140 @@
 .slick-next:before {
   font-size: 1.9rem;
   color: var(--bg-color-green);
+}
+
+.topCategorie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family-1);
+  padding: 90px 64px 0 64px;
+}
+.topCategorieContainer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+.topCategorieContainerDescriptionTitle {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+.topCategorieContainerDescriptionSubTitle {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.categorie {
+  padding: 64px;
+}
+.categorieTitle {
+  text-align: center;
+  font-family: var(--font-family-1);
+  font-size: 28px;
+}
+.categorieFiltres {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 64px 0;
+  font-family: var(--font-family-1);
+  font-weight: 600;
+}
+.categorieFiltresContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--bg-color-green-light);
+  padding: 12px 64px;
+  border-radius: 4px;
+}
+.categorieFiltresContainerBouton {
+  color: var(--color-text-white);
+  background-color: var(--color-text-green-flash);
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+  border-radius: 12px;
+}
+.categorieFiltresContainerBouton:hover {
+  cursor: pointer;
+  background-color: var(--bg-color-green-hover);
+}
+.categorieContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 48px;
+  padding: 0 32px;
+}
+.categorieContainerImage {
+  background-color: var(--bg-color-green-light);
+  padding: 12px;
+  border-radius: 4px;
+  font-family: var(--font-family-1);
+  margin: 0 32px;
+}
+.categorieContainerImageCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.categorieContainerImageCardPhoto {
+  width: 100%;
+  border-radius: 4px;
+}
+.categorieContainerImageCardTitre {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.categorieContainerImageCardPrix {
+  font-weight: bold;
+}
+.categorieContainerImageCardPrix > span:nth-child(1) {
+  text-decoration: line-through;
+  color: var(--color-text-red);
+}
+.categorieContainerImageCardPrix > span:nth-child(2) {
+  font-weight: bold;
+  color: var(--color-text-red);
+  margin: 0 8px;
+}
+.categorieContainerImageCardPrix > span:nth-child(3) {
+  font-weight: bold;
+}
+.categorieContainerImageCardOption {
+  display: flex;
+  gap: 8px;
+  color: var(--color-text-black);
+}
+.categorieContainerImageCardBouton {
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 4px;
+  color: var(--color-text-white);
+  background-color: var(--color-text-green-flash);
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+}
+.categorieContainerImageCardBouton:hover {
+  cursor: pointer;
+  background-color: var(--bg-color-green-hover);
+}
+.categorieContainerImageCardLien {
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--color-text-black);
+  background-color: var(--bg-color-white);
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+}
+.categorieContainerImageCardLien:hover {
+  background-color: var(--bg-color-white-hover);
+}
+.categorie #messageAucunResultatContainer {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.1em;
+  font-family: var(--font-family-1);
 }
 
 /*# sourceMappingURL=style.css.map */
