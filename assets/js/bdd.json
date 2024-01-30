@@ -8,9 +8,9 @@
         "price": 75.00,
         "discount": 5.00,
         "images": [
-          "./assets/images/Amphibiens/Terrestre/leucomelas1.jpg",
-          "./assets/images/Amphibiens/Terrestre/leucomelas2.jpg",
-          "./assets/images/Amphibiens/Terrestre/leucomelas3.jpg"
+          "../assets/images/Amphibiens/Terrestre/leucomelas1.jpg",
+          "../assets/images/Amphibiens/Terrestre/leucomelas2.jpg",
+          "../assets/images/Amphibiens/Terrestre/leucomelas3.jpg"
         ],
         "category": "Amphibiens",
         "sub_category": "terrestre",
@@ -26,9 +26,9 @@
         "price": 32.00,
         "discount": 0,
         "images": [
-          "./assets/images/Amphibiens/Terrestre/ceratophrys1.jpg",
-          "./assets/images/Amphibiens/Terrestre/ceratophrys2.jpg",
-          "./assets/images/Amphibiens/Terrestre/ceratophrys3.jpg"
+          "../assets/images/Amphibiens/Terrestre/ceratophrys1.jpg",
+          "../assets/images/Amphibiens/Terrestre/ceratophrys2.jpg",
+          "../assets/images/Amphibiens/Terrestre/ceratophrys3.jpg"
         ],
         "category": "Amphibiens",
         "sub_category": "terrestre",
@@ -44,9 +44,9 @@
         "price": 79.00,
         "discount": 5.00,
         "images": [
-          "./assets/images/Amphibiens/Terrestre/agalychnis1.jpg",
-          "./assets/images/Amphibiens/Terrestre/agalychnis2.jpg",
-          "./assets/images/Amphibiens/Terrestre/agalychnis3.jpg"
+          "../assets/images/Amphibiens/Terrestre/agalychnis1.jpg",
+          "../assets/images/Amphibiens/Terrestre/agalychnis2.jpg",
+          "../assets/images/Amphibiens/Terrestre/agalychnis3.jpg"
         ],
         "category": "Amphibiens",
         "sub_category": "terrestre",
@@ -62,9 +62,9 @@
         "price": 69.00,
         "discount": 0,
         "images": [
-          "./assets/images/Amphibiens/Terrestre/auratus1.jpg",
-          "./assets/images/Amphibiens/Terrestre/auratus2.jpg",
-          "./assets/images/Amphibiens/Terrestre/auratus3.jpg"
+          "../assets/images/Amphibiens/Terrestre/auratus1.jpg",
+          "../assets/images/Amphibiens/Terrestre/auratus2.jpg",
+          "../assets/images/Amphibiens/Terrestre/auratus3.jpg"
         ],
         "category": "Amphibiens",
         "sub_category": "terrestre",
@@ -80,9 +80,9 @@
         "price": 175.00,
         "discount": 10.00,
         "images": [
-          "./assets/images/Amphibiens/Terrestre/theloderma1.jpg",
-          "./assets/images/Amphibiens/Terrestre/theloderma2.jpg",
-          "./assets/images/Amphibiens/Terrestre/theloderma3.jpg"
+          "../assets/images/Amphibiens/Terrestre/theloderma1.jpg",
+          "../assets/images/Amphibiens/Terrestre/theloderma2.jpg",
+          "../assets/images/Amphibiens/Terrestre/theloderma3.jpg"
         ],
         "category": "Amphibiens",
         "sub_category": "terrestre",
@@ -98,9 +98,9 @@
         "price": 950.00,
         "discount": 0,
         "images": [
-          "./assets/images/Amphibiens/Aquatique/Kaloula1.jpg",
-          "./assets/images/Amphibiens/Aquatique/Kaloula2.jpg",
-          "./assets/images/Amphibiens/Aquatique/Kaloula3.jpg"
+          "../assets/images/Amphibiens/Aquatique/Kaloula1.jpg",
+          "../assets/images/Amphibiens/Aquatique/Kaloula2.jpg",
+          "../assets/images/Amphibiens/Aquatique/Kaloula3.jpg"
         ],
         "category": "Amphibiens",
         "sub_category": "aquatique",
@@ -116,9 +116,9 @@
         "price": 59.00,
         "discount": 15.00,
         "images": [
-          "./assets/images/Amphibiens/Aquatique/axolotl1.jpg",
-          "./assets/images/Amphibiens/Aquatique/axolotl2.jpg",
-          "./assets/images/Amphibiens/Aquatique/axolotl3.jpg"
+          "../assets/images/Amphibiens/Aquatique/axolotl1.jpg",
+          "../assets/images/Amphibiens/Aquatique/axolotl2.jpg",
+          "../assets/images/Amphibiens/Aquatique/axolotl3.jpg"
         ],
         "category": "Amphibiens",
         "sub_category": "aquatique",
@@ -134,9 +134,9 @@
         "price": 45.00,
         "discount": 5.00,
         "images": [
-          "./assets/images/Amphibiens/Aquatique/pipa1.jpg",
-          "./assets/images/Amphibiens/Aquatique/pipa2.jpg",
-          "./assets/images/Amphibiens/Aquatique/pipa3.jpg"
+          "../assets/images/Amphibiens/Aquatique/pipa1.jpg",
+          "../assets/images/Amphibiens/Aquatique/pipa2.jpg",
+          "../assets/images/Amphibiens/Aquatique/pipa3.jpg"
         ],
         "category": "Amphibiens",
         "sub_category": "aquatique",
@@ -152,9 +152,9 @@
         "price": 69.00,
         "discount": 0,
         "images": [
-          "./assets/images/Amphibiens/Aquatique/bufo1.jpg",
-          "./assets/images/Amphibiens/Aquatique/bufo2.jpg",
-          "./assets/images/Amphibiens/Aquatique/bufo3.jpg"
+          "../assets/images/Amphibiens/Aquatique/bufo1.jpg",
+          "../assets/images/Amphibiens/Aquatique/bufo2.jpg",
+          "../assets/images/Amphibiens/Aquatique/bufo3.jpg"
         ],
         "category": "Amphibiens",
         "sub_category": "aquatique",
@@ -170,9 +170,9 @@
         "price": 39.00,
         "discount": 0,
         "images": [
-          "./assets/images/Amphibiens/Aquatique/walt1.jpg",
-          "./assets/images/Amphibiens/Aquatique/walt2.jpg",
-          "./assets/images/Amphibiens/Aquatique/walt3.jpg"
+          "../assets/images/Amphibiens/Aquatique/walt1.jpg",
+          "../assets/images/Amphibiens/Aquatique/walt2.jpg",
+          "../assets/images/Amphibiens/Aquatique/walt3.jpg"
         ],
         "category": "Amphibiens",
         "sub_category": "aquatique",
@@ -191,9 +191,9 @@
         "price": 1150.00,
         "discount": 0,
         "images": [
-          "./assets/images/Serpents/Arboricole/morelia1.jpg",
-          "./assets/images/Serpents/Arboricole/morelia2.jpg",
-          "./assets/images/Serpents/Arboricole/morelia3.jpg"
+          "../assets/images/Serpents/Arboricole/morelia1.jpg",
+          "../assets/images/Serpents/Arboricole/morelia2.jpg",
+          "../assets/images/Serpents/Arboricole/morelia3.jpg"
         ],
         "category": "Serpents",
         "sub_category": "arboricole",
@@ -209,9 +209,9 @@
         "price": 125.00,
         "discount": 0,
         "images": [
-          "./assets/images/Serpents/Arboricole/opheodrys1.jpg",
-          "./assets/images/Serpents/Arboricole/opheodrys2.jpg",
-          "./assets/images/Serpents/Arboricole/opheodrys3.jpg"                   
+          "../assets/images/Serpents/Arboricole/opheodrys1.jpg",
+          "../assets/images/Serpents/Arboricole/opheodrys2.jpg",
+          "../assets/images/Serpents/Arboricole/opheodrys3.jpg"                   
         ],
         "category": "Serpents",
         "sub_category": "arboricole",
@@ -227,9 +227,9 @@
         "price": 49.00,
         "discount": 0,
         "images": [
-          "./assets/images/Serpents/Arboricole/philothamnus1.jpg",
-          "./assets/images/Serpents/Arboricole/philothamnus2.jpg",
-          "./assets/images/Serpents/Arboricole/philothamnus3.jpg"                   
+          "../assets/images/Serpents/Arboricole/philothamnus1.jpg",
+          "../assets/images/Serpents/Arboricole/philothamnus2.jpg",
+          "../assets/images/Serpents/Arboricole/philothamnus3.jpg"                   
         ],
         "category": "Serpents",
         "sub_category": "arboricole",
@@ -245,9 +245,9 @@
         "price": 125.00,
         "discount": 0,
         "images": [
-          "./assets/images/Serpents/Arboricole/pareas1.jpg",
-          "./assets/images/Serpents/Arboricole/pareas2.jpg",
-          "./assets/images/Serpents/Arboricole/pareas3.jpg"                   
+          "../assets/images/Serpents/Arboricole/pareas1.jpg",
+          "../assets/images/Serpents/Arboricole/pareas2.jpg",
+          "../assets/images/Serpents/Arboricole/pareas3.jpg"                   
         ],
         "category": "Serpents",
         "sub_category": "arboricole",
@@ -263,9 +263,9 @@
         "price": 245.00,
         "discount": 0,
         "images": [
-          "./assets/images/Serpents/Arboricole/chrysopelea1.jpg",
-          "./assets/images/Serpents/Arboricole/chrysopelea2.jpg",
-          "./assets/images/Serpents/Arboricole/chrysopelea3.jpg"                   
+          "../assets/images/Serpents/Arboricole/chrysopelea1.jpg",
+          "../assets/images/Serpents/Arboricole/chrysopelea2.jpg",
+          "../assets/images/Serpents/Arboricole/chrysopelea3.jpg"                   
         ],
         "category": "Serpents",
         "sub_category": "arboricole",
@@ -281,9 +281,9 @@
         "price": 395.00,
         "discount": 0,
         "images": [
-          "./assets/images/Serpents/Terrestre/boa1.jpg",
-          "./assets/images/Serpents/Terrestre/boa2.jpg",
-          "./assets/images/Serpents/Terrestre/boa3.jpg" 
+          "../assets/images/Serpents/Terrestre/boa1.jpg",
+          "../assets/images/Serpents/Terrestre/boa2.jpg",
+          "../assets/images/Serpents/Terrestre/boa3.jpg" 
         ],
         "category": "Serpents",
         "sub_category": "terrestre",
@@ -299,9 +299,9 @@
         "price": 245.00,
         "discount": 0,
         "images": [
-          "./assets/images/Serpents/Terrestre/heterodon1.jpg",
-          "./assets/images/Serpents/Terrestre/heterodon2.jpg",
-          "./assets/images/Serpents/Terrestre/heterodon3.jpg" 
+          "../assets/images/Serpents/Terrestre/heterodon1.jpg",
+          "../assets/images/Serpents/Terrestre/heterodon2.jpg",
+          "../assets/images/Serpents/Terrestre/heterodon3.jpg" 
         ],
         "category": "Serpents",
         "sub_category": "terrestre",
@@ -317,9 +317,9 @@
         "price": 175.00,
         "discount": 0,
         "images": [
-          "./assets/images/Serpents/Terrestre/eryx1.jpg",
-          "./assets/images/Serpents/Terrestre/eryx2.jpg",
-          "./assets/images/Serpents/Terrestre/eryx3.jpg" 
+          "../assets/images/Serpents/Terrestre/eryx1.jpg",
+          "../assets/images/Serpents/Terrestre/eryx2.jpg",
+          "../assets/images/Serpents/Terrestre/eryx3.jpg" 
         ],
         "category": "Serpents",
         "sub_category": "terrestre",
@@ -335,9 +335,9 @@
         "price": 195.00,
         "discount": 0,
         "images": [
-          "./assets/images/Serpents/Terrestre/lampropeltis1.jpg",
-          "./assets/images/Serpents/Terrestre/lampropeltis2.jpg",
-          "./assets/images/Serpents/Terrestre/lampropeltis3.jpg" 
+          "../assets/images/Serpents/Terrestre/lampropeltis1.jpg",
+          "../assets/images/Serpents/Terrestre/lampropeltis2.jpg",
+          "../assets/images/Serpents/Terrestre/lampropeltis3.jpg" 
         ],
         "category": "Serpents",
         "sub_category": "terrestre",
@@ -353,9 +353,9 @@
         "price": 45.00,
         "discount": 0,
         "images": [
-          "./assets/images/Serpents/Terrestre/pantherophis1.jpg",
-          "./assets/images/Serpents/Terrestre/pantherophis2.jpg",
-          "./assets/images/Serpents/Terrestre/pantherophis3.jpg" 
+          "../assets/images/Serpents/Terrestre/pantherophis1.jpg",
+          "../assets/images/Serpents/Terrestre/pantherophis2.jpg",
+          "../assets/images/Serpents/Terrestre/pantherophis3.jpg" 
         ],
         "category": "Serpents",
         "sub_category": "terrestre",
@@ -374,9 +374,9 @@
         "price": 4.00,
         "discount": 0,
         "images": [
-          "./assets/images/Invertebres/Terrestre/anadenobolus1.jpg",
-          "./assets/images/Invertebres/Terrestre/anadenobolus2.jpg",
-          "./assets/images/Invertebres/Terrestre/anadenobolus3.jpg"
+          "../assets/images/Invertebres/Terrestre/anadenobolus1.jpg",
+          "../assets/images/Invertebres/Terrestre/anadenobolus2.jpg",
+          "../assets/images/Invertebres/Terrestre/anadenobolus3.jpg"
         ],
         "category": "Invertebres",
         "sub_category": "terrestre",
@@ -392,9 +392,9 @@
         "price": 18.50,
         "discount": 0,
         "images": [
-          "./assets/images/Invertebres/Terrestre/anthia1.jpg",
-          "./assets/images/Invertebres/Terrestre/anthia2.jpg",
-          "./assets/images/Invertebres/Terrestre/anthia3.jpg"
+          "../assets/images/Invertebres/Terrestre/anthia1.jpg",
+          "../assets/images/Invertebres/Terrestre/anthia2.jpg",
+          "../assets/images/Invertebres/Terrestre/anthia3.jpg"
         ],
         "category": "Invertebres",
         "sub_category": "terrestre",
@@ -410,9 +410,9 @@
         "price": 18.00,
         "discount": 0,
         "images": [
-          "./assets/images/Invertebres/Terrestre/armadillidium1.jpg",
-          "./assets/images/Invertebres/Terrestre/armadillidium2.jpg",
-          "./assets/images/Invertebres/Terrestre/armadillidium3.jpg"
+          "../assets/images/Invertebres/Terrestre/armadillidium1.jpg",
+          "../assets/images/Invertebres/Terrestre/armadillidium2.jpg",
+          "../assets/images/Invertebres/Terrestre/armadillidium3.jpg"
         ],
         "category": "Invertebres",
         "sub_category": "terrestre",
@@ -428,9 +428,9 @@
         "price": 50.00,
         "discount": 0,
         "images": [
-          "./assets/images/Invertebres/Terrestre/phidippus1.jpg",
-          "./assets/images/Invertebres/Terrestre/phidippus2.jpg",
-          "./assets/images/Invertebres/Terrestre/phidippus3.jpg"
+          "../assets/images/Invertebres/Terrestre/phidippus1.jpg",
+          "../assets/images/Invertebres/Terrestre/phidippus2.jpg",
+          "../assets/images/Invertebres/Terrestre/phidippus3.jpg"
         ],
         "category": "Invertebres",
         "sub_category": "terrestre",
@@ -446,9 +446,9 @@
         "price": 4.00,
         "discount": 0,
         "images": [
-          "./assets/images/Invertebres/Terrestre/lissachatina1.jpg",
-          "./assets/images/Invertebres/Terrestre/lissachatina2.jpg",
-          "./assets/images/Invertebres/Terrestre/lissachatina3.jpg"
+          "../assets/images/Invertebres/Terrestre/lissachatina1.jpg",
+          "../assets/images/Invertebres/Terrestre/lissachatina2.jpg",
+          "../assets/images/Invertebres/Terrestre/lissachatina3.jpg"
         ],
         "category": "Invertebres",
         "sub_category": "terrestre",
@@ -464,9 +464,9 @@
         "price": 35.00,
         "discount": 0,
         "images": [
-          "./assets/images/Invertebres/Arboricole/hymenopus1.jpg",
-          "./assets/images/Invertebres/Arboricole/hymenopus2.jpg",
-          "./assets/images/Invertebres/Arboricole/hymenopus3.jpg"
+          "../assets/images/Invertebres/Arboricole/hymenopus1.jpg",
+          "../assets/images/Invertebres/Arboricole/hymenopus2.jpg",
+          "../assets/images/Invertebres/Arboricole/hymenopus3.jpg"
         ],
         "category": "Invertebres",
         "sub_category": "arboricole",
@@ -482,9 +482,9 @@
         "price": 8.00,
         "discount": 0,
         "images": [
-          "./assets/images/Invertebres/Arboricole/peruphasma1.jpg",
-          "./assets/images/Invertebres/Arboricole/peruphasma2.jpg",
-          "./assets/images/Invertebres/Arboricole/peruphasma3.jpg"
+          "../assets/images/Invertebres/Arboricole/peruphasma1.jpg",
+          "../assets/images/Invertebres/Arboricole/peruphasma2.jpg",
+          "../assets/images/Invertebres/Arboricole/peruphasma3.jpg"
         ],
         "category": "Invertebres",
         "sub_category": "arboricole",
@@ -500,9 +500,9 @@
         "price": 19.00,
         "discount": 0,
         "images": [
-          "./assets/images/Invertebres/Aquatique/geosesarma1.jpg",
-          "./assets/images/Invertebres/Aquatique/geosesarma2.jpg",
-          "./assets/images/Invertebres/Aquatique/geosesarma3.jpg"
+          "../assets/images/Invertebres/Aquatique/geosesarma1.jpg",
+          "../assets/images/Invertebres/Aquatique/geosesarma2.jpg",
+          "../assets/images/Invertebres/Aquatique/geosesarma3.jpg"
         ],
         "category": "Invertebres",
         "sub_category": "aquatique",
@@ -520,9 +520,9 @@
         "price": 19.00,
         "discount": 0,
         "images": [
-          "./assets/images/Lezards/Terrestre/anolis1.jpg",
-          "./assets/images/Lezards/Terrestre/anolis2.jpg",
-          "./assets/images/Lezards/Terrestre/anolis3.jpg"
+          "../assets/images/Lezards/Terrestre/anolis1.jpg",
+          "../assets/images/Lezards/Terrestre/anolis2.jpg",
+          "../assets/images/Lezards/Terrestre/anolis3.jpg"
         ],
         "category": "Lezards",
         "sub_category": "terrestre",
@@ -538,9 +538,9 @@
         "price": 145.00,
         "discount": 0,
         "images": [
-          "./assets/images/Lezards/Terrestre/eublepharis1.jpg",
-          "./assets/images/Lezards/Terrestre/eublepharis2.jpg",
-          "./assets/images/Lezards/Terrestre/eublepharis3.jpg"
+          "../assets/images/Lezards/Terrestre/eublepharis1.jpg",
+          "../assets/images/Lezards/Terrestre/eublepharis2.jpg",
+          "../assets/images/Lezards/Terrestre/eublepharis3.jpg"
         ],
         "category": "Lezards",
         "sub_category": "terrestre",
@@ -556,9 +556,9 @@
         "price": 185.00,
         "discount": 0,
         "images": [
-          "./assets/images/Lezards/Terrestre/pogona1.jpg",
-          "./assets/images/Lezards/Terrestre/pogona2.jpg",
-          "./assets/images/Lezards/Terrestre/pogona3.jpg"
+          "../assets/images/Lezards/Terrestre/pogona1.jpg",
+          "../assets/images/Lezards/Terrestre/pogona2.jpg",
+          "../assets/images/Lezards/Terrestre/pogona3.jpg"
         ],
         "category": "Lezards",
         "sub_category": "terrestre",
@@ -574,9 +574,9 @@
         "price": 99.00,
         "discount": 0,
         "images": [
-          "./assets/images/Lezards/Arboricole/chamaeleo1.jpg",
-          "./assets/images/Lezards/Arboricole/chamaeleo2.jpg",
-          "./assets/images/Lezards/Arboricole/chamaeleo3.jpg"
+          "../assets/images/Lezards/Arboricole/chamaeleo1.jpg",
+          "../assets/images/Lezards/Arboricole/chamaeleo2.jpg",
+          "../assets/images/Lezards/Arboricole/chamaeleo3.jpg"
         ],
         "category": "Lezards",
         "sub_category": "arboricole",
@@ -592,9 +592,9 @@
         "price": 69.00,
         "discount": 0,
         "images": [
-          "./assets/images/Lezards/Arboricole/carolinensis1.jpg",
-          "./assets/images/Lezards/Arboricole/carolinensis2.jpg",
-          "./assets/images/Lezards/Arboricole/carolinensis3.jpg"
+          "../assets/images/Lezards/Arboricole/carolinensis1.jpg",
+          "../assets/images/Lezards/Arboricole/carolinensis2.jpg",
+          "../assets/images/Lezards/Arboricole/carolinensis3.jpg"
         ],
         "category": "Lezards",
         "sub_category": "arboricole",
@@ -612,15 +612,15 @@
         "price": 5.00,
         "discount": 0,
         "images": [
-          "./assets/images/Alimentation/Vivant/blattes1.jpg",
-          "./assets/images/Alimentation/Vivant/blattes2.jpg",
-          "./assets/images/Alimentation/Vivant/blattes3.jpg"
+          "../assets/images/Alimentation/Vivant/blattes1.jpg",
+          "../assets/images/Alimentation/Vivant/blattes2.jpg",
+          "../assets/images/Alimentation/Vivant/blattes3.jpg"
         ],
         "category": "Alimentation",
         "sub_category": "vivant",
         "features": {
           "feature1": "adulte",
-          "feature2": "100"
+          "feature2": "10"
         }
       },
       {
@@ -630,15 +630,15 @@
         "price": 4.90,
         "discount": 0,
         "images": [
-          "./assets/images/Alimentation/Vivant/collemboles1.jpg",
-          "./assets/images/Alimentation/Vivant/collemboles2.jpg",
-          "./assets/images/Alimentation/Vivant/collemboles3.jpg"
+          "../assets/images/Alimentation/Vivant/collemboles1.jpg",
+          "../assets/images/Alimentation/Vivant/collemboles2.jpg",
+          "../assets/images/Alimentation/Vivant/collemboles3.jpg"
         ],
         "category": "Alimentation",
         "sub_category": "vivant",
         "features": {
           "feature1": "adulte",
-          "feature2": "200"
+          "feature2": "100"
         }
       },
       {
@@ -648,15 +648,15 @@
         "price": 2.50,
         "discount": 0,
         "images": [
-          "./assets/images/Alimentation/Vivant/grillons1.jpg",
-          "./assets/images/Alimentation/Vivant/grillons2.jpg",
-          "./assets/images/Alimentation/Vivant/grillons3.jpg"
+          "../assets/images/Alimentation/Vivant/grillons1.jpg",
+          "../assets/images/Alimentation/Vivant/grillons2.jpg",
+          "../assets/images/Alimentation/Vivant/grillons3.jpg"
         ],
         "category": "Alimentation",
         "sub_category": "vivant",
         "features": {
           "feature1": "juvénile",
-          "feature2": "100"
+          "feature2": "200"
         }
       },
       {
@@ -666,9 +666,9 @@
         "price": 30.00,
         "discount": 0,
         "images": [
-          "./assets/images/Alimentation/Congele/souris1.jpg",
-          "./assets/images/Alimentation/Congele/souris2.jpg",
-          "./assets/images/Alimentation/Congele/souris3.jpg"
+          "../assets/images/Alimentation/Congele/souris1.jpg",
+          "../assets/images/Alimentation/Congele/souris2.jpg",
+          "../assets/images/Alimentation/Congele/souris3.jpg"
         ],
         "category": "Alimentation",
         "sub_category": "congele",
@@ -684,9 +684,9 @@
         "price": 10.00,
         "discount": 0,
         "images": [
-          "./assets/images/Alimentation/Sec/jelly1.jpg",
-          "./assets/images/Alimentation/Sec/jelly2.jpg",
-          "./assets/images/Alimentation/Sec/jelly3.jpg"
+          "../assets/images/Alimentation/Sec/jelly1.jpg",
+          "../assets/images/Alimentation/Sec/jelly2.jpg",
+          "../assets/images/Alimentation/Sec/jelly3.jpg"
         ],
         "category": "Alimentation",
         "sub_category": "sec",
