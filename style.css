@@ -276,7 +276,6 @@ footer {
   color: var(--bg-color-green);
 }
 
-
 .topCategorie {
   display: flex;
   flex-direction: column;
@@ -409,6 +408,7 @@ footer {
   font-weight: bolder;
   font-size: 1.1em;
   font-family: var(--font-family-1);
+}
 
 .product {
   margin-top: 200px;
@@ -728,7 +728,6 @@ p {
 
 #home-button:hover {
   background-color: #45a049; /* Changé la couleur en vert foncé au survol */
-
 }
 
 /*# sourceMappingURL=style.css.map */
