@@ -1,0 +1,15 @@
+//Modification Slick
+.slick-prev {
+    left: 32px;
+  }
+  
+  .slick-next {
+    right: 32px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 1.9rem;
+    color: var(--bg-color-green);
+  }
+  

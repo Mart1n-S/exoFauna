@@ -1,84 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-decoration: none;
-  }
-  
-  .header {
-    background-color: var(--bg-color-white);
-    color: var(--color-text-on-bg-white);
-    padding: 12px;
-  
-    &Navigation {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: var(--bg-color-green);
+  color: var(--color-text-white);
+  padding: 16px 164px;
+
+  &Navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &Logo {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 56px;
-      flex-wrap: wrap;
-  
-      &Logo {
-        display: flex;
-  
-        &Text {
-          font-family: var(--font-family-1);
-          font-size: var(--size-text-logo);
-          font-weight: var(--font-weight-bold);
-          margin-left: var(--margin-text-logo);
-        }
-      }
-  
-      &Links {
-        display: flex;
-        gap: 40px;
-        align-items: center;
-        font-family: var(--font-family-2);
-        &Text {
-          color: var(--color-text-on-bg-color-1);
-          font-weight: var(--font-weight-semi-bold);
-          &:hover {
-            color: var(--text-color-hover-light);
-          }
-        }
-        &TextVariante {
-          padding: 8px 40px;
-          border-radius: 24px;
-          border: 2px solid var(--bg-color-2);
-          background-color: var(--bg-color-2);
-          color: var(--color-text-on-bg-color-2-button);
-          font-weight: var(--font-weight-bold);
-          &:hover {
-            background-color: var(--text-color-hover-light);
-            border: 2px solid var(--bg-color-hover-button);
-          }
-        }
-      }
-    }
-    &Title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      font-family: var(--font-family-2);
-      font-weight: var(--font-weight-regular);
-      &Previous {
-        font-size: var(--size-text-s);
-        line-height: var(--line-height-text-s);
-        color: var(--color-text-light);
-      }
-      &Heading {
+      &Text {
         font-family: var(--font-family-1);
-        font-size: var(--size-heading-1);
-        font-weight: var(--font-weight-regular);
-        line-height: var(--line-height-heading-1);
-        margin: var(--margin-heading);
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-left: 12px;
       }
-      &After {
-        font-size: var(--size-text-xs);
-        line-height: var(--line-height-text-xs);
-        color: var(--color-text-light);
-        width: 42%;
+    }
+
+    &Links {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      font-family: var(--font-family-1);
+      &Text {
+        color: var(--color-text-white);
+        &:hover {
+          color: var(--color-text-muted);
+        }
       }
     }
   }
-  
+}

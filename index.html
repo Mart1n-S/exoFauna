@@ -7,14 +7,25 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo.svg" />
     <title>ExoFona</title>
   </head>
   <body>
     <header class="header">
       <nav class="headerNavigation">
         <div class="headerNavigationLogo">
-          <img src="assets/images/logoExoFauna.jpg" alt="logo ExoFona" />
+          <img src="assets/images/logoExoFauna.svg" alt="logo ExoFona" />
           <div class="headerNavigationLogoText">ExoFona</div>
         </div>
         <div class="headerNavigationLinks">
@@ -22,29 +33,141 @@
             <a href="" class="headerNavigationLinksText">Search</a>
           </span>
           <span class="material-symbols-outlined">
-            <a href="" class="headerNavigationLinksText"
-              >account_circle</a
-            >
+            <a href="" class="headerNavigationLinksText">account_circle</a>
           </span>
 
           <span class="material-symbols-outlined">
-            <a href="" class="headerNavigationLinksText"
-              >shopping_cart</a
-            >
+            <a href="" class="headerNavigationLinksText">shopping_cart</a>
           </span>
         </div>
       </nav>
-      <div class="headerTitle">
-        <p class="headerTitlePrevious">##</p>
-        <h1 class="headerTitleHeading">
-          ###
-        </h1>
-        <p class="headerTitleAfter">
-          ###
-        </p>
-      </div>
     </header>
-    <main><section></section></main>
+    <main>
+      <section class="topAccueil">
+        <div class="topAccueilNeonContainer">
+          <p class="topAccueilNeonContainerText">
+            Jusqu'à -10% sur les amphibiens
+          </p>
+          <p class="topAccueilNeonContainerBlurred">
+            Jusqu'à -10% sur les amphibiens
+          </p>
+        </div>
+
+        <div class="topAccueilContainer">
+          <div class="topAccueilContainerImage">
+            <img src="assets/images/dendrobateLeucomelas.svg" alt="photo d'une dendrobate leucomelas" />
+          </div>
+          <div class="topAccueilContainerDescription">
+            <h1 class="topAccueilContainerDescriptionTitle">ExoFauna</h1>
+            <p class="topAccueilContainerDescriptionSubTitle">
+              ExoFauna c'est un <strong>élevage spécialisé</strong>,</br> une animalerie en ligne et une boutique à Marseille </br>entièrement dédiés aux nouveaux animaux de compagnies.
+              <br> <strong>Toute notre expertise dans votre terrarium</strong>
+            </p>
+            <div class="topAccueilContainerDescriptionButton">
+              <a href="#amphibiens" class="smooth-scroll">Découvrir</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="produits" id="amphibiens">
+        <p class="produitsInformation">
+          Vous trouverez ici tous nos animaux disponible à la vente <br />
+          ainsi que tout ce qu'il faut pour leur alimentation
+        </p>
+        <div class="produitsDescription">
+          <h2 class="produitsDescriptionTitle">Amphibiens</h2>
+          <h3 class="produitsDescriptionSubTitle">
+            Grenouilles, Salamandres, Crapauds...
+          </h3>
+        </div>
+        <div
+          class="produitsContainer"
+          data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'
+          id="card"
+        ></div>
+        <div class="produitsCategorie">
+          <a href="templates/categorie.html?categorie=amphibiens" class="produitsCategorieBouton">Voir tout</a>
+        </div>
+      </section>
+      <section class="produits" id="serpents">
+        <div class="produitsDescription">
+          <h2 class="produitsDescriptionTitle">Serpents</h2>
+          <h3 class="produitsDescriptionSubTitle">
+            Pythons, Boas, Couleuvres...
+          </h3>
+        </div>
+        <div
+          class="produitsContainer"
+          data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'
+          id="card2"
+        ></div>
+        <div class="produitsCategorie">
+          <a href="templates/categorie.html?categorie=serpents" class="produitsCategorieBouton">Voir tout</a>
+        </div>
+      </section>
+      <section class="produits" id="invertebres">
+        <div class="produitsDescription">
+          <h2 class="produitsDescriptionTitle">Invertébrés</h2>
+          <h3 class="produitsDescriptionSubTitle">
+            Araignées, Phasmes, iules...
+          </h3>
+        </div>
+        <div
+          class="produitsContainer"
+          data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'
+          id="card3"
+        ></div>
+        <div class="produitsCategorie">
+          <a href="templates/categorie.html?categorie=invertebres" class="produitsCategorieBouton">Voir tout</a>
+        </div>
+      </section>
+      <section class="produits" id="lezards">
+        <div class="produitsDescription">
+          <h2 class="produitsDescriptionTitle">Lézards</h2>
+          <h3 class="produitsDescriptionSubTitle">
+            Agames, Iguanes, Geckos...
+          </h3>
+        </div>
+        <div
+          class="produitsContainer"
+          data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'
+          id="card4"
+        ></div>
+        <div class="produitsCategorie">
+          <a href="templates/categorie.html?categorie=lezards" class="produitsCategorieBouton">Voir tout</a>
+        </div>
+      </section>
+      <section class="produits" id="alimentation">
+        <div class="produitsDescription">
+          <h2 class="produitsDescriptionTitle">Alimentation</h2>
+          <h3 class="produitsDescriptionSubTitle">
+            Blattes, Souris, Collemboles...
+          </h3>
+        </div>
+        <div
+          class="produitsContainer"
+          data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'
+          id="card5"
+        ></div>
+        <div class="produitsCategorie">
+          <a href="templates/categorie.html?categorie=alimentation" class="produitsCategorieBouton">Voir tout</a>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="assets/js/accueil.js" defer></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      defer
+    ></script>
   </body>
 </html>
