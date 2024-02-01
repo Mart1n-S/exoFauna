@@ -7,6 +7,8 @@
   --color-text-red: #ff0000;
   --color-text-green-neon: #b7f700;
   --bg-color-green: #30a46c;
+  --bg-color-red: #ff0000;
+  --bg-color-red-hover: #ffa1a1;
   --bg-color-green-hover: #009600;
   --bg-color-white: #fff;
   --bg-color-white-hover: #e9e9e9;
@@ -75,6 +77,10 @@ footer {
   font-weight: bold;
   margin-left: 12px;
 }
+.headerNavigationLogoTextLien {
+  text-decoration: none;
+  color: var(--text-color-white);
+}
 .headerNavigationLinks {
   display: flex;
   gap: 40px;
@@ -85,7 +91,159 @@ footer {
   color: var(--color-text-white);
 }
 .headerNavigationLinksText:hover {
+  cursor: pointer;
   color: var(--color-text-muted);
+}
+
+/* Style de la modal */
+.modal {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  font-family: var(--font-family-1);
+  top: 0;
+  right: -100%;
+  width: 35%;
+  height: 100%;
+  background-color: var(--bg-color-white);
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+  transition: right 0.8s;
+  z-index: 1;
+}
+.modalPanier {
+  background-color: var(--bg-color-white);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+  position: relative;
+}
+.modalPanierContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modalPanierContainerContent {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--bg-color-green-light);
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+.modalPanierContainerContentCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.modalPanierContainerContentCard img {
+  width: 30%;
+}
+.modalPanierContainerContentCardText {
+  text-align: center;
+}
+.modalPanierContainerContentCardTextTitre {
+  margin-bottom: 4px;
+}
+.modalPanierContainerContentCardTextPrix {
+  font-weight: bold;
+}
+.modalPanierContainerContentCardTextPrix > span:nth-child(1) {
+  text-decoration: line-through;
+  color: var(--color-text-red);
+}
+.modalPanierContainerContentCardTextPrix > span:nth-child(2) {
+  font-weight: bold;
+  color: var(--color-text-red);
+  margin: 0 8px;
+}
+.modalPanierContainerContentCardTextPrix > span:nth-child(3) {
+  font-weight: bold;
+}
+.modalPanierContainerContentGestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.modalPanierContainerContentGestionMoins, .modalPanierContainerContentGestionPlus {
+  padding: 2px;
+  border-radius: 4px;
+  background-color: var(--color-text-green-flash);
+  color: var(--color-text-white);
+}
+.modalPanierContainerContentGestionMoins span, .modalPanierContainerContentGestionPlus span {
+  font-size: 1.4em;
+  margin-top: 2px;
+}
+.modalPanierContainerContentGestionMoins:hover, .modalPanierContainerContentGestionPlus:hover {
+  cursor: pointer;
+  background-color: var(--bg-color-green-hover);
+}
+.modalPanierContainerContentGestion input::-webkit-outer-spin-button,
+.modalPanierContainerContentGestion input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.modalPanierContainerContentGestionInput {
+  width: 32px;
+  padding: 4px;
+  margin: 0;
+}
+.modalPanierContainerContentGestionDelete {
+  padding: 2px;
+  border-radius: 4px;
+  background-color: var(--bg-color-red);
+  color: var(--color-text-white);
+}
+.modalPanierContainerContentGestionDelete span {
+  font-size: 1.4em;
+  margin-top: 2px;
+}
+.modalPanierContainerContentGestionDelete:hover {
+  cursor: pointer;
+  background-color: var(--bg-color-red-hover);
+}
+.modalPanierContainerPrix {
+  color: var(--color-text-black) !important;
+  margin-top: 8px;
+  font-weight: 600;
+}
+.modalPanierContainerBouton {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.modalPanierContainerBoutonSupprimer {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px var(--color-text-red) solid;
+  color: var(--color-text-red);
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+  background-color: var(--bg-color-white);
+}
+.modalPanierContainerBoutonSupprimer:hover {
+  cursor: pointer;
+  background-color: var(--bg-color-red-hover);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover, .close:focus {
+  color: var(--color-text-black);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .topAccueil {
@@ -109,7 +267,6 @@ footer {
   font-size: 1.5em;
   font-weight: bold;
   position: absolute;
-  z-index: 2;
 }
 .topAccueilNeonContainerBlurred {
   color: var(--color-text-green-neon);
@@ -221,7 +378,7 @@ footer {
 .produitsContainerImageCardPrix > span:nth-child(3) {
   font-weight: bold;
 }
-.produitsContainerImageCardBouton {
+.produitsContainerImageCardBouton, .modalPanierContainerBouton {
   padding: 8px;
   font-size: 1em;
   border-radius: 4px;
@@ -229,7 +386,7 @@ footer {
   background-color: var(--color-text-green-flash);
   box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
 }
-.produitsContainerImageCardBouton:hover {
+.produitsContainerImageCardBouton:hover, .modalPanierContainerBouton:hover {
   cursor: pointer;
   background-color: var(--bg-color-green-hover);
 }
@@ -339,69 +496,10 @@ footer {
   gap: 48px;
   padding: 0 32px;
 }
-.categorieContainerImage {
-  background-color: var(--bg-color-green-light);
-  padding: 12px;
-  border-radius: 4px;
-  font-family: var(--font-family-1);
-  margin: 0 32px;
-}
-.categorieContainerImageCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-.categorieContainerImageCardPhoto {
-  width: 100%;
-  border-radius: 4px;
-}
-.categorieContainerImageCardTitre {
-  text-align: center;
-  font-size: 1.1em;
-  font-weight: 600;
-}
-.categorieContainerImageCardPrix {
-  font-weight: bold;
-}
-.categorieContainerImageCardPrix > span:nth-child(1) {
-  text-decoration: line-through;
-  color: var(--color-text-red);
-}
-.categorieContainerImageCardPrix > span:nth-child(2) {
-  font-weight: bold;
-  color: var(--color-text-red);
-  margin: 0 8px;
-}
-.categorieContainerImageCardPrix > span:nth-child(3) {
-  font-weight: bold;
-}
 .categorieContainerImageCardOption {
   display: flex;
   gap: 8px;
   color: var(--color-text-black);
-}
-.categorieContainerImageCardBouton {
-  padding: 8px;
-  font-size: 1em;
-  border-radius: 4px;
-  color: var(--color-text-white);
-  background-color: var(--color-text-green-flash);
-  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
-}
-.categorieContainerImageCardBouton:hover {
-  cursor: pointer;
-  background-color: var(--bg-color-green-hover);
-}
-.categorieContainerImageCardLien {
-  padding: 8px;
-  border-radius: 4px;
-  color: var(--color-text-black);
-  background-color: var(--bg-color-white);
-  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
-}
-.categorieContainerImageCardLien:hover {
-  background-color: var(--bg-color-white-hover);
 }
 .categorie #messageAucunResultatContainer {
   text-align: center;
