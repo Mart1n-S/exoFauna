@@ -1,0 +1,42 @@
+.deliveryBody {
+    font-family: var(--font-family-1);
+    background-color: var(--bg-color-white-2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+
+    &Container {
+        background-color: var(--bg-color-white);
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        &Title {
+            text-align: center;
+        }
+
+        &Form {
+            display: flex;
+            flex-direction: column;
+
+            &Label {
+                margin-top: 10px;
+            }
+
+            &Champ {
+                margin-bottom: 15px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            &Bouton {
+                @extend .modalPanierContainerBouton;
+                justify-content: center;
+            }
+        }
+    }
+}

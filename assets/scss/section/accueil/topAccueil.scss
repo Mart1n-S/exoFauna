@@ -4,6 +4,7 @@
   align-items: center;
   font-family: var(--font-family-1);
   padding: 90px 64px;
+
   &NeonContainer {
     display: flex;
     justify-content: center;
@@ -12,15 +13,16 @@
     width: 70%;
     margin-bottom: 128px;
     border-radius: 4px;
+
     &Text {
-      color: var(--color-text-green-neon); 
+      color: var(--color-text-green-neon);
       font-size: 1.5em;
       font-weight: bold;
       position: absolute;
-      z-index: 2;
     }
+
     &Blurred {
-      color: var(--color-text-green-neon); 
+      color: var(--color-text-green-neon);
       font-size: 1.5em;
       font-weight: bold;
       position: absolute;
@@ -28,26 +30,33 @@
       filter: blur(2px);
     }
   }
+
   &Container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
+
     &Description {
       &Title {
         font-size: 4em;
       }
+
       &SubTitle {
         font-size: 1.1em;
         margin-top: 24px;
         line-height: 2em;
-        strong{
+
+        strong {
           font-weight: 600;
         }
       }
+
       &Button {
         text-align: center;
         margin-top: 64px;
+
         a {
           font-size: 1.5em;
           font-weight: bold;
@@ -55,7 +64,8 @@
           border-radius: 4px;
           color: var(--color-text-white);
           background-color: var(--color-text-green-flash);
-          box-shadow: 3px 4px 4px 3px  var(--bg-box-shadow);
+          box-shadow: 3px 4px 4px 3px var(--bg-box-shadow);
+
           &:hover {
             background-color: var(--bg-color-green-hover);
           }

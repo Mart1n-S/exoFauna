@@ -1,17 +1,20 @@
 .categorie {
   padding: 64px;
+
   &Title {
     text-align: center;
     font-family: var(--font-family-1);
     font-size: 28px;
   }
+
   &Filtres {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     margin: 24px 0 64px 0;
     font-family: var(--font-family-1);
     font-weight: 600;
-    &Container{
+
+    &Container {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -19,12 +22,14 @@
       background-color: var(--bg-color-green-light);
       padding: 12px 64px;
       border-radius: 4px;
-      &Bouton{
+
+      &Bouton {
         color: var(--color-text-white);
         background-color: var(--color-text-green-flash);
         box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
         border-radius: 12px;
-        &:hover{
+
+        &:hover {
           cursor: pointer;
           background-color: var(--bg-color-green-hover);
 
@@ -32,80 +37,25 @@
       }
     }
   }
+
   &Container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 48px;
     padding: 0 32px;
+
     &Image {
-      background-color: var(--bg-color-green-light);
-      padding: 12px;
-      border-radius: 4px;
-      font-family: var(--font-family-1);
-      margin: 0 32px;
       &Card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-
-        &Photo {
-          width: 100%;
-          border-radius: 4px;
-        }
-        &Titre {
-          text-align: center;
-          font-size: 1.1em;
-          font-weight: 600;
-        }
-        &Prix {
-          font-weight: bold;
-          > span:nth-child(1) {
-            text-decoration: line-through;
-            color: var(--color-text-red);
-          }
-
-          > span:nth-child(2) {
-            font-weight: bold;
-            color: var(--color-text-red);
-            margin: 0 8px;
-          }
-
-          > span:nth-child(3) {
-            font-weight: bold;
-          }
-        }
         &Option {
           display: flex;
           gap: 8px;
           color: var(--color-text-black);
         }
-        &Bouton {
-          padding: 8px;
-          font-size: 1em;
-          border-radius: 4px;
-          color: var(--color-text-white);
-          background-color: var(--color-text-green-flash);
-          box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
-          &:hover {
-            cursor: pointer;
-            background-color: var(--bg-color-green-hover);
-          }
-        }
-        &Lien {
-          padding: 8px;
-          border-radius: 4px;
-          color: var(--color-text-black);
-          background-color: var(--bg-color-white);
-          box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
-          &:hover {
-            background-color: var(--bg-color-white-hover);
-          }
-        }
       }
     }
   }
-  #messageAucunResultatContainer{
+
+  #messageAucunResultatContainer {
     text-align: center;
     font-weight: bolder;
     font-size: 1.1em;

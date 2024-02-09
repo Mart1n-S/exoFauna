@@ -1,0 +1,195 @@
+/* Style de la modal */
+.modal {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  font-family: var(--font-family-1);
+  top: 0;
+  right: -100%;
+  width: 35%;
+  height: 100%;
+  background-color: var(--bg-color-white);
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+  transition: right 0.8s;
+  z-index: 1;
+
+  &Panier {
+    background-color: var(--bg-color-white);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+    position: relative;
+
+    &Container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      &Content {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        background-color: var(--bg-color-green-light);
+        border-radius: 4px;
+        padding: 8px;
+        margin-bottom: 12px;
+
+        &Card {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          width: 70%;
+
+          img {
+            width: 30%;
+          }
+
+          &Text {
+            text-align: center;
+
+            &Titre {
+              margin-bottom: 4px;
+            }
+
+            &Prix {
+              font-weight: bold;
+
+              >span:nth-child(1) {
+                text-decoration: line-through;
+                color: var(--color-text-red);
+              }
+
+              >span:nth-child(2) {
+                font-weight: bold;
+                color: var(--color-text-red);
+                margin: 0 8px;
+              }
+
+              >span:nth-child(3) {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        &Gestion {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 16px;
+
+          &Moins {
+            padding: 2px;
+            border-radius: 4px;
+            background-color: var(--color-text-green-flash);
+            color: var(--color-text-white);
+
+            span {
+              font-size: 1.4em;
+              margin-top: 2px;
+            }
+
+            &:hover {
+              cursor: pointer;
+              background-color: var(--bg-color-green-hover);
+            }
+          }
+
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+          }
+
+          &Input {
+            width: 32px;
+            padding: 4px;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+
+          &Plus {
+            @extend .modalPanierContainerContentGestionMoins;
+
+          }
+
+          &Delete {
+            padding: 2px;
+            border-radius: 4px;
+            background-color: var(--bg-color-red);
+            color: var(--color-text-white);
+
+            span {
+              font-size: 1.4em;
+              margin-top: 2px;
+            }
+
+            &:hover {
+              cursor: pointer;
+              background-color: var(--bg-color-red-hover);
+            }
+          }
+        }
+      }
+
+      &Prix {
+        color: var(--color-text-black) !important;
+        margin-top: 8px;
+        font-weight: 600;
+      }
+
+      &Bouton {
+        @extend .produitsContainerImageCardBouton;
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+      }
+
+      &BoutonSupprimer {
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        padding: 8px;
+        font-size: 1em;
+        border-radius: 4px;
+        border: 1px var(--color-text-red) solid;
+        color: var(--color-text-red);
+        box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+        background-color: var(--bg-color-white);
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--bg-color-red-hover);
+        }
+      }
+
+      &BoutonLien {
+        color: var(--color-text-black);
+        text-decoration: underline;
+        margin-top: 8px;
+
+        &:hover {
+          color: var(--color-text-green-flash);
+        }
+      }
+    }
+  }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5em;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-black);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
