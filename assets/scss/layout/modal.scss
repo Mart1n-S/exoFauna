@@ -105,6 +105,8 @@
             width: 32px;
             padding: 4px;
             margin: 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
           }
 
           &Plus {
@@ -166,7 +168,8 @@
         color: var(--color-text-black);
         text-decoration: underline;
         margin-top: 8px;
-        &:hover{
+
+        &:hover {
           color: var(--color-text-green-flash);
         }
       }

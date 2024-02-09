@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --color-text-white: #fff;
   --color-text-black: #000000;
@@ -11,39 +10,36 @@
   --bg-color-red-hover: #ffa1a1;
   --bg-color-green-hover: #009600;
   --bg-color-white: #fff;
+  --bg-color-white-2: #f4f4f4;
   --bg-color-white-hover: #e9e9e9;
   --bg-color-black: #000000;
+  --bg-color-dark: #333;
   --bg-color-green-light: #30a46c57;
   --bg-box-shadow: #00000026;
   --font-family-1: "Manrope", Helvetica;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
+.footer {
+  font-family: var(--font-family-1);
+  background-color: var(--bg-color-dark);
+  color: var(--color-text-white);
   text-align: center;
   padding: 20px;
 }
-
-.footer-content {
+.footerContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.footer-left,
-.footer-right {
+.footerContentLeft, .footerContentRight {
   flex: 1;
 }
-
-.social-icons {
+.footerContentRightSocial {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* Ajustez la taille des icônes selon vos besoins */
-.social-icons i {
+.footerContentRightSocialIcons {
   font-size: 20px;
   margin-left: 10px;
 }
@@ -192,6 +188,8 @@ footer {
   width: 32px;
   padding: 4px;
   margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 .modalPanierContainerContentGestionDelete, .panierCardContainerContentGestionDelete {
   padding: 2px;
@@ -212,7 +210,7 @@ footer {
   margin-top: 8px;
   font-weight: 600;
 }
-.modalPanierContainerBouton, .panierCardContainerBouton {
+.modalPanierContainerBouton, .deliveryBodyContainerFormBouton, .thanksContentActionBouton, .panierCardContainerBouton {
   display: flex;
   align-items: center;
   margin-top: 8px;
@@ -388,7 +386,7 @@ footer {
 .produitsContainerImageCardPrix > span:nth-child(3), .detailsContainerContentPrix > span:nth-child(3) {
   font-weight: bold;
 }
-.produitsContainerImageCardBouton, .descriptionContentButton, .detailsContainerContentAjout, .modalPanierContainerBouton, .panierCardContainerBouton {
+.produitsContainerImageCardBouton, .descriptionContentButton, .detailsContainerContentAjout, .modalPanierContainerBouton, .deliveryBodyContainerFormBouton, .thanksContentActionBouton, .panierCardContainerBouton {
   padding: 8px;
   font-size: 1em;
   border-radius: 4px;
@@ -396,7 +394,7 @@ footer {
   background-color: var(--color-text-green-flash);
   box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
 }
-.produitsContainerImageCardBouton:hover, .descriptionContentButton:hover, .detailsContainerContentAjout:hover, .modalPanierContainerBouton:hover, .panierCardContainerBouton:hover {
+.produitsContainerImageCardBouton:hover, .descriptionContentButton:hover, .detailsContainerContentAjout:hover, .modalPanierContainerBouton:hover, .deliveryBodyContainerFormBouton:hover, .thanksContentActionBouton:hover, .panierCardContainerBouton:hover {
   cursor: pointer;
   background-color: var(--bg-color-green-hover);
 }
@@ -601,9 +599,12 @@ footer {
 .panierCardContainerContentCard img {
   width: 30%;
 }
-.deliveryBody {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+.panierCardContainerBoutonLien {
+  color: var(--text-color-white);
+}
+.deliveryBody, .thanks {
+  font-family: var(--font-family-1);
+  background-color: var(--bg-color-white-2);
   margin: 0;
   padding: 0;
   display: flex;
@@ -611,88 +612,50 @@ footer {
   align-items: center;
   height: 110vh;
 }
-
-.container {
-  background-color: #fff;
+.deliveryBodyContainer {
+  background-color: var(--bg-color-white);
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
+.deliveryBodyContainerTitle, .thanksContentTitle {
   text-align: center;
 }
-
-form {
+.deliveryBodyContainerForm {
   display: flex;
   flex-direction: column;
 }
-
-label {
+.deliveryBodyContainerFormLabel {
   margin-top: 10px;
 }
-
-input,
-textarea,
-select {
+.deliveryBodyContainerFormChamp {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
+}
+.deliveryBodyContainerFormBouton, .thanksContentActionBouton {
+  justify-content: center;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+.thanks {
+  height: 84vh;
+  padding: 0 64px;
 }
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.thanksBody {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.thank-you-container {
-  max-width: 600px;
-  margin: 50px auto;
-  background-color: #fff;
+.thanksContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--bg-color-white);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
-  color: #333;
+.thanksContentText {
+  color: var(--color-text-dark);
 }
-
-p {
-  color: #666;
-}
-
-#home-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #4CAF50; /* Changé la couleur en vert */
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-#home-button:hover {
-  background-color: #45a049; /* Changé la couleur en vert foncé au survol */
+.thanksContentAction {
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
