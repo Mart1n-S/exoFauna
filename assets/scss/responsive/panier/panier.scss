@@ -1,0 +1,9 @@
+@media (max-width: 430px) {
+   .panier{
+    padding: 0;
+    height: 100vh;
+    &Card{
+        width: inherit;
+    }
+   }
+}
