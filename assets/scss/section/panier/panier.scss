@@ -76,6 +76,9 @@
   
         &Bouton {
           @extend .modalPanierContainerBouton;
+          &Lien{
+            color: var(--text-color-white)
+          }
         }
         &BoutonSupprimer {
          @extend .modalPanierContainerBoutonSupprimer;

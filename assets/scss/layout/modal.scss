@@ -26,7 +26,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      gap: 18px;
       &Content {
         display: flex;
         align-items: center;
@@ -40,6 +40,7 @@
           display: flex;
           align-items: center;
           gap: 12px;
+          width: 70%;
 
           img {
             width: 30%;
@@ -105,6 +106,8 @@
             width: 32px;
             padding: 4px;
             margin: 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
           }
 
           &Plus {
@@ -166,7 +169,8 @@
         color: var(--color-text-black);
         text-decoration: underline;
         margin-top: 8px;
-        &:hover{
+
+        &:hover {
           color: var(--color-text-green-flash);
         }
       }

@@ -1,0 +1,36 @@
+@media (max-width: 430px) {
+
+    .modal {
+        width: 89%;
+
+        &Panier {
+            margin: 0;
+            width: inherit;
+            box-shadow: none;
+
+            &Container {
+                gap: 12px;
+
+                &Content {
+                    gap: 4px;
+
+                    img {
+                        width: 40%;
+                    }
+
+                    &CardText {
+                        text-align: left;
+                    }
+
+                    &Gestion {
+                        gap: 4px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+}

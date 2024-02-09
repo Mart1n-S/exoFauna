@@ -1,5 +1,5 @@
 @import "variables.scss";
-@import "footer.scss";
+@import "./layout/footer.scss";
 @import "./layout/header.scss";
 @import "./layout/modal.scss";
 @import "./pages/accueil.scss";
@@ -8,4 +8,5 @@
 @import "./pages/panier.scss";
 @import "./pages/delivery.scss";
 @import "./pages/thanks.scss";
-
+@import "./responsive/layout/header.scss";
+@import "./responsive/layout/modal.scss";

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --color-text-white: #fff;
   --color-text-black: #000000;
@@ -11,39 +10,36 @@
   --bg-color-red-hover: #ffa1a1;
   --bg-color-green-hover: #009600;
   --bg-color-white: #fff;
+  --bg-color-white-2: #f4f4f4;
   --bg-color-white-hover: #e9e9e9;
   --bg-color-black: #000000;
+  --bg-color-dark: #333;
   --bg-color-green-light: #30a46c57;
   --bg-box-shadow: #00000026;
   --font-family-1: "Manrope", Helvetica;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
+.footer {
+  font-family: var(--font-family-1);
+  background-color: var(--bg-color-dark);
+  color: var(--color-text-white);
   text-align: center;
   padding: 20px;
 }
-
-.footer-content {
+.footerContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.footer-left,
-.footer-right {
+.footerContentLeft, .footerContentRight {
   flex: 1;
 }
-
-.social-icons {
+.footerContentRightSocial {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* Ajustez la taille des icônes selon vos besoins */
-.social-icons i {
+.footerContentRightSocialIcons {
   font-size: 20px;
   margin-left: 10px;
 }
@@ -123,6 +119,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 18px;
 }
 .modalPanierContainerContent, .panierCardContainerContent {
   display: flex;
@@ -137,6 +134,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 12px;
+  width: 70%;
 }
 .modalPanierContainerContentCard img, .panierCardContainerContentCard img {
   width: 30%;
@@ -192,6 +190,8 @@ footer {
   width: 32px;
   padding: 4px;
   margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 .modalPanierContainerContentGestionDelete, .panierCardContainerContentGestionDelete {
   padding: 2px;
@@ -212,7 +212,7 @@ footer {
   margin-top: 8px;
   font-weight: 600;
 }
-.modalPanierContainerBouton, .panierCardContainerBouton {
+.modalPanierContainerBouton, .deliveryBodyContainerFormBouton, .thanksContentActionBouton, .panierCardContainerBouton {
   display: flex;
   align-items: center;
   margin-top: 8px;
@@ -291,6 +291,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 .topAccueilContainerDescriptionTitle {
   font-size: 4em;
@@ -388,7 +389,7 @@ footer {
 .produitsContainerImageCardPrix > span:nth-child(3), .detailsContainerContentPrix > span:nth-child(3) {
   font-weight: bold;
 }
-.produitsContainerImageCardBouton, .descriptionContentButton, .detailsContainerContentAjout, .modalPanierContainerBouton, .panierCardContainerBouton {
+.produitsContainerImageCardBouton, .descriptionContentButton, .detailsContainerContentAjout, .modalPanierContainerBouton, .deliveryBodyContainerFormBouton, .thanksContentActionBouton, .panierCardContainerBouton {
   padding: 8px;
   font-size: 1em;
   border-radius: 4px;
@@ -396,7 +397,7 @@ footer {
   background-color: var(--color-text-green-flash);
   box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
 }
-.produitsContainerImageCardBouton:hover, .descriptionContentButton:hover, .detailsContainerContentAjout:hover, .modalPanierContainerBouton:hover, .panierCardContainerBouton:hover {
+.produitsContainerImageCardBouton:hover, .descriptionContentButton:hover, .detailsContainerContentAjout:hover, .modalPanierContainerBouton:hover, .deliveryBodyContainerFormBouton:hover, .thanksContentActionBouton:hover, .panierCardContainerBouton:hover {
   cursor: pointer;
   background-color: var(--bg-color-green-hover);
 }
@@ -443,6 +444,44 @@ footer {
   color: var(--bg-color-green);
 }
 
+@media (max-width: 430px) {
+  .topAccueil {
+    padding: 90px 18px;
+  }
+  .topAccueilNeonContainer {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .topAccueilContainer {
+    text-align: center;
+  }
+  .topAccueilContainerImage img {
+    width: 100%;
+  }
+  .topAccueilContainerDescriptionTitle {
+    font-size: 3.5em;
+  }
+  .produits {
+    padding: 64px 18px;
+  }
+  .produitsInformation {
+    font-size: 1.5em;
+    margin-bottom: 64px;
+  }
+  .produitsDescription {
+    margin: 0 0 32px 0;
+  }
+  .produitsContainer {
+    padding: 0;
+  }
+  .slick-prev {
+    left: -4px;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 4px;
+  }
+}
 .topCategorie, .topDetails {
   display: flex;
   flex-direction: column;
@@ -518,6 +557,21 @@ footer {
   font-family: var(--font-family-1);
 }
 
+@media (max-width: 430px) {
+  .topCategorieContainerDescriptionTitle, .topDetailsContainerDescriptionTitle {
+    font-size: 3.5em;
+  }
+  .categorie {
+    padding: 32px 0;
+  }
+  .categorieFiltresContainer {
+    flex-direction: column;
+    padding: 12px;
+  }
+  .categorieContainer {
+    padding: 0;
+  }
+}
 .details {
   display: flex;
   flex-direction: row;
@@ -577,6 +631,17 @@ footer {
   font-family: var(--font-family-1);
   color: var(--color-text-black);
 }
+@media (max-width: 430px) {
+  .topDetailsContainerDescriptionTitle {
+    font-size: 2.5em;
+  }
+  .detailsContainerContent {
+    text-align: center;
+  }
+  .description {
+    padding: 64px 18px;
+  }
+}
 .panier {
   display: flex;
   justify-content: center;
@@ -601,9 +666,21 @@ footer {
 .panierCardContainerContentCard img {
   width: 30%;
 }
-.deliveryBody {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+.panierCardContainerBoutonLien {
+  color: var(--text-color-white);
+}
+@media (max-width: 430px) {
+  .panier {
+    padding: 0;
+    height: 100vh;
+  }
+  .panierCard {
+    width: inherit;
+  }
+}
+.deliveryBody, .thanks {
+  font-family: var(--font-family-1);
+  background-color: var(--bg-color-white-2);
   margin: 0;
   padding: 0;
   display: flex;
@@ -611,88 +688,80 @@ footer {
   align-items: center;
   height: 110vh;
 }
-
-.container {
-  background-color: #fff;
+.deliveryBodyContainer {
+  background-color: var(--bg-color-white);
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
+.deliveryBodyContainerTitle, .thanksContentTitle {
   text-align: center;
 }
-
-form {
+.deliveryBodyContainerForm {
   display: flex;
   flex-direction: column;
 }
-
-label {
+.deliveryBodyContainerFormLabel {
   margin-top: 10px;
 }
-
-input,
-textarea,
-select {
+.deliveryBodyContainerFormChamp {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
+}
+.deliveryBodyContainerFormBouton, .thanksContentActionBouton {
+  justify-content: center;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+.thanks {
+  height: 84vh;
+  padding: 0 64px;
 }
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.thanksBody {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.thank-you-container {
-  max-width: 600px;
-  margin: 50px auto;
-  background-color: #fff;
+.thanksContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--bg-color-white);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
-  color: #333;
+.thanksContentText {
+  color: var(--color-text-dark);
 }
-
-p {
-  color: #666;
+.thanksContentAction {
+  align-self: center;
 }
-
-#home-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #4CAF50; /* Changé la couleur en vert */
-  border-radius: 5px;
-  transition: background-color 0.3s;
+@media (max-width: 430px) {
+  .header {
+    padding: 16px;
+  }
 }
-
-#home-button:hover {
-  background-color: #45a049; /* Changé la couleur en vert foncé au survol */
+@media (max-width: 430px) {
+  .modal {
+    width: 89%;
+  }
+  .modalPanier {
+    margin: 0;
+    width: inherit;
+    box-shadow: none;
+  }
+  .modalPanierContainer, .panierCardContainer {
+    gap: 12px;
+  }
+  .modalPanierContainerContent, .panierCardContainerContent {
+    gap: 4px;
+  }
+  .modalPanierContainerContent img, .panierCardContainerContent img {
+    width: 40%;
+  }
+  .modalPanierContainerContentCardText, .panierCardContainerContentCardText {
+    text-align: left;
+  }
+  .modalPanierContainerContentGestion, .detailsContainerContentGestion, .panierCardContainerContentGestion {
+    gap: 4px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

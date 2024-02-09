@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -53,35 +53,36 @@
         <section class="description" id="description">
 
         </section>
-      <section class="modal" id="panierModal">
-        <div class="modalPanier">
-            <div class="modalPanierContainer">
-                <span class="close">&times;</span>
-                <h2>Votre Panier</h2>
-                <div id="modalPanierContainerContent">
-                </div>
-                <p class="modalPanierContainerPrix">Total : <span id="totalPanier">0.00€</span></p>
-                <button class="modalPanierContainerBouton" id="validerPanier"><span
-                        class="material-symbols-outlined">shopping_cart</span> Commander</button>
-                <button class="modalPanierContainerBoutonSupprimer" onclick="confirmAndClearLocalStorage('modalPanierContainerContent')"
-                    id="viderPanier"><span class="material-symbols-outlined">
-                        delete_forever
-                    </span>Vider le panier</button>
+        <section class="modal" id="panierModal">
+            <div class="modalPanier">
+                <div class="modalPanierContainer">
+                    <span class="close">&times;</span>
+                    <h2>Votre Panier</h2>
+                    <div id="modalPanierContainerContent">
+                    </div>
+                    <p class="modalPanierContainerPrix">Total : <span id="totalPanier">0.00€</span></p>
+                    <button class="modalPanierContainerBouton" id="validerPanier"><span
+                            class="material-symbols-outlined">shopping_cart</span> Commander</button>
+                    <button class="modalPanierContainerBoutonSupprimer"
+                        onclick="confirmAndClearLocalStorage('modalPanierContainerContent')" id="viderPanier"><span
+                            class="material-symbols-outlined">
+                            delete_forever
+                        </span>Vider le panier</button>
                     <a href="panier.html" class="modalPanierContainerBoutonLien">Voir panier</a>
+                </div>
             </div>
-        </div>
-    </section>
-    </main> 
-<footer>
-        <div class="footer-content">
-            <div class="footer-left">
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footerContent">
+            <div class="footerContentLeft">
                 <p>&copy; 2024 ExoFauna. Tous droits réservés.</p>
             </div>
-            <div class="footer-right">
-                <div class="social-icons">
-                    <i class='bx bxl-facebook-square'></i>
-                    <i class='bx bxl-twitter'></i>
-                    <i class='bx bxl-instagram'></i>
+            <div class="footerContentRight">
+                <div class="footerContentRightSocial">
+                    <i class='bx bxl-facebook-square footerContentRightSocialIcons'></i>
+                    <i class='bx bxl-twitter footerContentRightSocialIcons'></i>
+                    <i class='bx bxl-instagram footerContentRightSocialIcons'></i>
                 </div>
             </div>
         </div>

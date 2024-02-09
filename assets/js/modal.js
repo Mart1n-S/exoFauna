@@ -233,4 +233,5 @@ function addPanier(articleId,defaultQuantity=1) {
 
     updatePanierDisplay(modalPanierContainerContent);
   }
+  alert('Produit(s) ajouté(s) au panier 🙌');
 }
