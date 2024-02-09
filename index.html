@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="assets/images/logo.svg" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>ExoFona</title>
 </head>
 
@@ -74,7 +75,7 @@
           Grenouilles, Salamandres, Crapauds...
         </h3>
       </div>
-      <div class="produitsContainer" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}' id="card"></div>
+      <div class="produitsContainer"  id="card"></div>
       <div class="produitsCategorie">
         <a href="templates/categorie.html?categorie=amphibiens" class="produitsCategorieBouton">Voir tout</a>
       </div>
@@ -86,7 +87,7 @@
           Pythons, Boas, Couleuvres...
         </h3>
       </div>
-      <div class="produitsContainer" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}' id="card2"></div>
+      <div class="produitsContainer"  id="card2"></div>
       <div class="produitsCategorie">
         <a href="templates/categorie.html?categorie=serpents" class="produitsCategorieBouton">Voir tout</a>
       </div>
@@ -98,7 +99,7 @@
           Araignées, Phasmes, iules...
         </h3>
       </div>
-      <div class="produitsContainer" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}' id="card3"></div>
+      <div class="produitsContainer"  id="card3"></div>
       <div class="produitsCategorie">
         <a href="templates/categorie.html?categorie=invertebres" class="produitsCategorieBouton">Voir tout</a>
       </div>
@@ -110,7 +111,7 @@
           Agames, Iguanes, Geckos...
         </h3>
       </div>
-      <div class="produitsContainer" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}' id="card4"></div>
+      <div class="produitsContainer"  id="card4"></div>
       <div class="produitsCategorie">
         <a href="templates/categorie.html?categorie=lezards" class="produitsCategorieBouton">Voir tout</a>
       </div>
@@ -122,7 +123,7 @@
           Blattes, Souris, Collemboles...
         </h3>
       </div>
-      <div class="produitsContainer" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}' id="card5"></div>
+      <div class="produitsContainer"  id="card5"></div>
       <div class="produitsCategorie">
         <a href="templates/categorie.html?categorie=alimentation" class="produitsCategorieBouton">Voir tout</a>
       </div>
@@ -137,24 +138,25 @@
           <p class="modalPanierContainerPrix">Total : <span id="totalPanier">0.00€</span></p>
           <button class="modalPanierContainerBouton" id="validerPanier"><span
               class="material-symbols-outlined">shopping_cart</span> Commander</button>
-          <button class="modalPanierContainerBoutonSupprimer" onclick="confirmAndClearLocalStorage()"
+          <button class="modalPanierContainerBoutonSupprimer" onclick="confirmAndClearLocalStorage('modalPanierContainerContent')"
             id="viderPanier"><span class="material-symbols-outlined">
               delete_forever
             </span>Vider le panier</button>
+            <a href="templates/panier.html" class="modalPanierContainerBoutonLien">Voir panier</a>
         </div>
       </div>
     </section>
   </main>
-  <footer>
-    <div class="footer-content">
-      <div class="footer-left">
+  <footer class="footer">
+    <div class="footerContent">
+      <div class="footerContentLeft">
         <p>&copy; 2024 ExoFauna. Tous droits réservés.</p>
       </div>
-      <div class="footer-right">
-        <div class="social-icons">
-          <i class='bx bxl-facebook-square'></i>
-          <i class='bx bxl-twitter'></i>
-          <i class='bx bxl-instagram'></i>
+      <div class="footerContentRight">
+        <div class="footerContentRightSocial">
+        <i class='bx bxl-facebook-square footerContentRightSocialIcons'></i>              
+        <i class='bx bxl-twitter footerContentRightSocialIcons'></i>                
+        <i class='bx bxl-instagram footerContentRightSocialIcons'></i> 
         </div>
       </div>
     </div>
@@ -162,6 +164,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="assets/js/util.js" defer></script>
+  <script src="assets/js/utilGestionPanier.js" defer></script>
   <script src="assets/js/accueil.js" defer></script>
   <script src="assets/js/modal.js" defer></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>

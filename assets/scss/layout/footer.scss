@@ -1,0 +1,32 @@
+.footer {
+  font-family: var(--font-family-1);
+  background-color: var(--bg-color-dark);
+  color: var(--color-text-white);
+  text-align: center;
+  padding: 20px;
+
+  &Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &Left {
+      flex: 1;
+    }
+
+    &Right {
+      @extend .footerContentLeft;
+
+      &Social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &Icons {
+          font-size: 20px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

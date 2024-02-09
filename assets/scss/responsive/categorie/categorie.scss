@@ -1,0 +1,15 @@
+@media (max-width: 430px) {
+    .topCategorieContainerDescriptionTitle{
+        font-size: 3.5em;
+    }
+    .categorie{
+        padding: 32px 0;
+        &FiltresContainer{
+            flex-direction: column;
+            padding: 12px;
+        }
+        &Container{
+            padding: 0;
+        }
+    }
+ }
