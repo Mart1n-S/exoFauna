@@ -40,6 +40,7 @@
           display: flex;
           align-items: center;
           gap: 12px;
+
           img {
             width: 30%;
           }
@@ -51,22 +52,23 @@
               margin-bottom: 4px;
             }
 
-            &Prix{
+            &Prix {
+              font-weight: bold;
+
+              >span:nth-child(1) {
+                text-decoration: line-through;
+                color: var(--color-text-red);
+              }
+
+              >span:nth-child(2) {
                 font-weight: bold;
-                > span:nth-child(1) {
-                    text-decoration: line-through;
-                    color: var(--color-text-red);
-                  }
-        
-                  > span:nth-child(2) {
-                    font-weight: bold;
-                    color: var(--color-text-red);
-                    margin: 0 8px;
-                  }
-        
-                  > span:nth-child(3) {
-                    font-weight: bold;
-                  }
+                color: var(--color-text-red);
+                margin: 0 8px;
+              }
+
+              >span:nth-child(3) {
+                font-weight: bold;
+              }
             }
           }
         }
@@ -82,13 +84,15 @@
             border-radius: 4px;
             background-color: var(--color-text-green-flash);
             color: var(--color-text-white);
-            span{
-                font-size: 1.4em;
-                margin-top: 2px;
+
+            span {
+              font-size: 1.4em;
+              margin-top: 2px;
             }
-            &:hover{
-                cursor: pointer;
-                background-color: var(--bg-color-green-hover);
+
+            &:hover {
+              cursor: pointer;
+              background-color: var(--bg-color-green-hover);
             }
           }
 
@@ -104,8 +108,8 @@
           }
 
           &Plus {
-                @extend .modalPanierContainerContentGestionMoins;
-         
+            @extend .modalPanierContainerContentGestionMoins;
+
           }
 
           &Delete {
@@ -113,13 +117,15 @@
             border-radius: 4px;
             background-color: var(--bg-color-red);
             color: var(--color-text-white);
-            span{
-                font-size: 1.4em;
-                margin-top: 2px;
+
+            span {
+              font-size: 1.4em;
+              margin-top: 2px;
             }
-            &:hover{
-                cursor: pointer;
-                background-color: var(--bg-color-red-hover);
+
+            &:hover {
+              cursor: pointer;
+              background-color: var(--bg-color-red-hover);
             }
           }
         }
@@ -153,6 +159,15 @@
         &:hover {
           cursor: pointer;
           background-color: var(--bg-color-red-hover);
+        }
+      }
+
+      &BoutonLien {
+        color: var(--color-text-black);
+        text-decoration: underline;
+        margin-top: 8px;
+        &:hover{
+          color: var(--color-text-green-flash);
         }
       }
     }

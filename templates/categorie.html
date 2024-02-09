@@ -81,10 +81,11 @@
           <p class="modalPanierContainerPrix">Total : <span id="totalPanier">0.00€</span></p>
           <button class="modalPanierContainerBouton" id="validerPanier"><span
               class="material-symbols-outlined">shopping_cart</span> Commander</button>
-          <button class="modalPanierContainerBoutonSupprimer" onclick="confirmAndClearLocalStorage()"
+          <button class="modalPanierContainerBoutonSupprimer" onclick="confirmAndClearLocalStorage('modalPanierContainerContent')"
             id="viderPanier"><span class="material-symbols-outlined">
               delete_forever
             </span>Vider le panier</button>
+            <a href="panier.html" class="modalPanierContainerBoutonLien">Voir panier</a>
         </div>
       </div>
     </section>
@@ -109,6 +110,7 @@
   <script src="../assets/js/categorie.js" defer></script>
   <script src="../assets/js/filtres.js" defer></script>
   <script src="../assets/js/modal.js" defer></script>
+   <script src="../assets/js/utilGestionPanier.js" defer></script>
 </body>
 
 </html>

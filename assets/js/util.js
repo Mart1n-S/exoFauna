@@ -95,7 +95,12 @@ function createCards(container, article) {
 
   // Crée un lien pour voir les détails
   const detailsLink = document.createElement("a");
-  detailsLink.href = `templates/details.html?id=${article.id}`;
+  if (valeurParametre){
+    detailsLink.href = `details.html?id=${article.id}`;
+  }else{
+    detailsLink.href = `templates/details.html?id=${article.id}`;
+  }
+  
   detailsLink.classList.add("produitsContainerImageCardLien");
   detailsLink.textContent = "Voir détails";
 

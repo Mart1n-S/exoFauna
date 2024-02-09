@@ -119,12 +119,12 @@ footer {
   box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
   position: relative;
 }
-.modalPanierContainer {
+.modalPanierContainer, .panierCardContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.modalPanierContainerContent {
+.modalPanierContainerContent, .panierCardContainerContent {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -133,90 +133,91 @@ footer {
   padding: 8px;
   margin-bottom: 12px;
 }
-.modalPanierContainerContentCard {
+.modalPanierContainerContentCard, .panierCardContainerContentCard {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.modalPanierContainerContentCard img {
+.modalPanierContainerContentCard img, .panierCardContainerContentCard img {
   width: 30%;
 }
-.modalPanierContainerContentCardText {
+.modalPanierContainerContentCardText, .panierCardContainerContentCardText {
   text-align: center;
 }
-.modalPanierContainerContentCardTextTitre {
+.modalPanierContainerContentCardTextTitre, .panierCardContainerContentCardTextTitre {
   margin-bottom: 4px;
 }
-.modalPanierContainerContentCardTextPrix {
+.modalPanierContainerContentCardTextPrix, .panierCardContainerContentCardTextPrix {
   font-weight: bold;
 }
-.modalPanierContainerContentCardTextPrix > span:nth-child(1) {
+.modalPanierContainerContentCardTextPrix > span:nth-child(1), .panierCardContainerContentCardTextPrix > span:nth-child(1) {
   text-decoration: line-through;
   color: var(--color-text-red);
 }
-.modalPanierContainerContentCardTextPrix > span:nth-child(2) {
+.modalPanierContainerContentCardTextPrix > span:nth-child(2), .panierCardContainerContentCardTextPrix > span:nth-child(2) {
   font-weight: bold;
   color: var(--color-text-red);
   margin: 0 8px;
 }
-.modalPanierContainerContentCardTextPrix > span:nth-child(3) {
+.modalPanierContainerContentCardTextPrix > span:nth-child(3), .panierCardContainerContentCardTextPrix > span:nth-child(3) {
   font-weight: bold;
 }
-.modalPanierContainerContentGestion, .detailsContainerContentGestion {
+.modalPanierContainerContentGestion, .panierCardContainerContentGestion, .detailsContainerContentGestion {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
 }
-.modalPanierContainerContentGestionMoins, .detailsContainerContentGestionPlus, .detailsContainerContentGestionMoins, .modalPanierContainerContentGestionPlus {
+.modalPanierContainerContentGestionMoins, .panierCardContainerContentGestionPlus, .panierCardContainerContentGestionMoins, .detailsContainerContentGestionPlus, .detailsContainerContentGestionMoins, .modalPanierContainerContentGestionPlus {
   padding: 2px;
   border-radius: 4px;
   background-color: var(--color-text-green-flash);
   color: var(--color-text-white);
 }
-.modalPanierContainerContentGestionMoins span, .detailsContainerContentGestionPlus span, .detailsContainerContentGestionMoins span, .modalPanierContainerContentGestionPlus span {
+.modalPanierContainerContentGestionMoins span, .panierCardContainerContentGestionPlus span, .panierCardContainerContentGestionMoins span, .detailsContainerContentGestionPlus span, .detailsContainerContentGestionMoins span, .modalPanierContainerContentGestionPlus span {
   font-size: 1.4em;
   margin-top: 2px;
 }
-.modalPanierContainerContentGestionMoins:hover, .detailsContainerContentGestionPlus:hover, .detailsContainerContentGestionMoins:hover, .modalPanierContainerContentGestionPlus:hover {
+.modalPanierContainerContentGestionMoins:hover, .panierCardContainerContentGestionPlus:hover, .panierCardContainerContentGestionMoins:hover, .detailsContainerContentGestionPlus:hover, .detailsContainerContentGestionMoins:hover, .modalPanierContainerContentGestionPlus:hover {
   cursor: pointer;
   background-color: var(--bg-color-green-hover);
 }
-.modalPanierContainerContentGestion input::-webkit-outer-spin-button, .detailsContainerContentGestion input::-webkit-outer-spin-button,
+.modalPanierContainerContentGestion input::-webkit-outer-spin-button, .panierCardContainerContentGestion input::-webkit-outer-spin-button, .detailsContainerContentGestion input::-webkit-outer-spin-button,
 .modalPanierContainerContentGestion input::-webkit-inner-spin-button,
+.panierCardContainerContentGestion input::-webkit-inner-spin-button,
 .detailsContainerContentGestion input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-.modalPanierContainerContentGestionInput, .detailsContainerContentGestionInput {
+.modalPanierContainerContentGestionInput, .panierCardContainerContentGestionInput, .detailsContainerContentGestionInput {
   width: 32px;
   padding: 4px;
   margin: 0;
 }
-.modalPanierContainerContentGestionDelete {
+.modalPanierContainerContentGestionDelete, .panierCardContainerContentGestionDelete {
   padding: 2px;
   border-radius: 4px;
   background-color: var(--bg-color-red);
   color: var(--color-text-white);
 }
-.modalPanierContainerContentGestionDelete span {
+.modalPanierContainerContentGestionDelete span, .panierCardContainerContentGestionDelete span {
   font-size: 1.4em;
   margin-top: 2px;
 }
-.modalPanierContainerContentGestionDelete:hover {
+.modalPanierContainerContentGestionDelete:hover, .panierCardContainerContentGestionDelete:hover {
   cursor: pointer;
   background-color: var(--bg-color-red-hover);
 }
-.modalPanierContainerPrix {
+.modalPanierContainerPrix, .panierCardContainerPrix {
   color: var(--color-text-black) !important;
   margin-top: 8px;
   font-weight: 600;
 }
-.modalPanierContainerBouton {
+.modalPanierContainerBouton, .panierCardContainerBouton {
   display: flex;
   align-items: center;
   margin-top: 8px;
 }
-.modalPanierContainerBoutonSupprimer {
+.modalPanierContainerBoutonSupprimer, .panierCardContainerBoutonSupprimer {
   display: flex;
   align-items: center;
   margin-top: 8px;
@@ -228,9 +229,17 @@ footer {
   box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
   background-color: var(--bg-color-white);
 }
-.modalPanierContainerBoutonSupprimer:hover {
+.modalPanierContainerBoutonSupprimer:hover, .panierCardContainerBoutonSupprimer:hover {
   cursor: pointer;
   background-color: var(--bg-color-red-hover);
+}
+.modalPanierContainerBoutonLien {
+  color: var(--color-text-black);
+  text-decoration: underline;
+  margin-top: 8px;
+}
+.modalPanierContainerBoutonLien:hover {
+  color: var(--color-text-green-flash);
 }
 
 .close {
@@ -379,7 +388,7 @@ footer {
 .produitsContainerImageCardPrix > span:nth-child(3), .detailsContainerContentPrix > span:nth-child(3) {
   font-weight: bold;
 }
-.produitsContainerImageCardBouton, .descriptionContentButton, .detailsContainerContentAjout, .modalPanierContainerBouton {
+.produitsContainerImageCardBouton, .descriptionContentButton, .detailsContainerContentAjout, .modalPanierContainerBouton, .panierCardContainerBouton {
   padding: 8px;
   font-size: 1em;
   border-radius: 4px;
@@ -387,7 +396,7 @@ footer {
   background-color: var(--color-text-green-flash);
   box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
 }
-.produitsContainerImageCardBouton:hover, .descriptionContentButton:hover, .detailsContainerContentAjout:hover, .modalPanierContainerBouton:hover {
+.produitsContainerImageCardBouton:hover, .descriptionContentButton:hover, .detailsContainerContentAjout:hover, .modalPanierContainerBouton:hover, .panierCardContainerBouton:hover {
   cursor: pointer;
   background-color: var(--bg-color-green-hover);
 }
@@ -568,123 +577,30 @@ footer {
   font-family: var(--font-family-1);
   color: var(--color-text-black);
 }
-.Panier {
-  width: 36%;
-  margin: 30px auto;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 35px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.PanierContainer {
+.panier {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  padding: 64px;
+  overflow-y: auto;
+  font-family: var(--font-family-1);
+  height: 100%;
+  background-color: var(--bg-color-white);
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+  transition: right 0.8s;
+  z-index: 1;
 }
-
-.PanierContainerImg img {
-  max-width: 100%;
-  height: auto;
+.panierCard {
+  background-color: var(--bg-color-white);
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  width: 80%;
+  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+  position: relative;
 }
-
-.PanierContainerDescription {
-  flex-grow: 1;
-  margin-left: 20px;
+.panierCardContainerContentCard img {
+  width: 30%;
 }
-
-.achat {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.achatPrix {
-  font-size: 20px;
-  margin-right: 20px;
-}
-
-.achatPrixQuantity-btn {
-  background-color: #4CAF50; /* Vert */
-  color: #fff;
-  border: none;
-  padding: 4px 8px;
-  margin: 7px;
-  cursor: pointer;
-}
-
-.total-price {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-icons i {
-  font-size: 24px;
-  margin-right: 10px;
-  color: #fff;
-}
-
-.PanierContainerDescription {
-  flex-grow: 1;
-  margin-left: 20px;
-}
-
-.delete-btn {
-  background-color: #ff5858; /* Rouge */
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-radius: 3px;
-}
-
-.delete-btn:hover {
-  background-color: #d63838; /* Rouge foncé au survol */
-}
-
-.img_panier {
-  height: 200px;
-  width: 300px;
-}
-
-.totalPrice {
-  margin-top: 15px;
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-/* Add more styling as needed */
-h1 {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 700;
-  margin: 30px;
-}
-
-/* Ajoutez ce code CSS pour styliser le bouton Commander */
-.order-btn {
-  background-color: #ff4ddb; /* Couleur de fond rouge */
-  color: #fff; /* Couleur du texte blanc */
-  padding: 10px 20px; /* Espacement intérieur du bouton */
-  border: none; /* Supprime la bordure */
-  border-radius: 5px; /* Coins arrondis */
-  cursor: pointer; /* Curseur de la souris pointer */
-  font-size: 16px; /* Taille du texte */
-  margin: 20px; /* Marge en haut pour l'espacement */
-  transition: background-color 0.3s; /* Transition pour le changement de couleur de fond */
-}
-
-.order-btn:hover {
-  background-color: rgba(204, 0, 180, 0.537254902); /* Couleur de fond plus foncée au survol */
-}
-
 .deliveryBody {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;

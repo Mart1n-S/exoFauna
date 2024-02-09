@@ -138,10 +138,11 @@
           <p class="modalPanierContainerPrix">Total : <span id="totalPanier">0.00€</span></p>
           <button class="modalPanierContainerBouton" id="validerPanier"><span
               class="material-symbols-outlined">shopping_cart</span> Commander</button>
-          <button class="modalPanierContainerBoutonSupprimer" onclick="confirmAndClearLocalStorage()"
+          <button class="modalPanierContainerBoutonSupprimer" onclick="confirmAndClearLocalStorage('modalPanierContainerContent')"
             id="viderPanier"><span class="material-symbols-outlined">
               delete_forever
             </span>Vider le panier</button>
+            <a href="templates/panier.html" class="modalPanierContainerBoutonLien">Voir panier</a>
         </div>
       </div>
     </section>
@@ -163,6 +164,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="assets/js/util.js" defer></script>
+  <script src="assets/js/utilGestionPanier.js" defer></script>
   <script src="assets/js/accueil.js" defer></script>
   <script src="assets/js/modal.js" defer></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>

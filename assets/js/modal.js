@@ -22,105 +22,14 @@ closeBtn.addEventListener("click", fermerModal);
 
 // Au chargement de la page on update le panier comme ça si le local storage n'est pas vide on affiche les produits dans le panier
 window.onload = function () {
-  updatePanierDisplay();
+  const modalPanierContainerContent = document.getElementById(
+    "modalPanierContainerContent"
+  );
+  updatePanierDisplay(modalPanierContainerContent);
 };
 
-// Fonction pour calculer le prix de chaque produit
-function calculateItemPrice(item) {
-  return item.discount ? item.price * (1 - item.discount / 100) : item.price;
-}
-// Fonction pour calculer le nouveau prix total
-function calculateTotalPrice(panierItems) {
-  return panierItems.reduce((total, item) => {
-    const itemPrice = calculateItemPrice(item);
-    return total + itemPrice * item.quantity;
-  }, 0);
-}
-// Fonction pour mettre à jour le prix
-function updateTotalPrice() {
-  const panierItems = JSON.parse(localStorage.getItem("panier")) || [];
-  const totalPrice = calculateTotalPrice(panierItems);
-
-  const totalPanierElement = document.getElementById("totalPanier");
-  totalPanierElement.textContent = totalPrice.toFixed(2) + "€";
-}
-
-// Fonction pour mettre à jour le panier
-function clearPanierContent() {
-  const modalPanierContainerContent = document.getElementById(
-    "modalPanierContainerContent"
-  );
-  modalPanierContainerContent.innerHTML = "";
-}
-//Fonction qui utilise la methode de création de cards pour mettre à jour le panier
-function displayPanierItem(item) {
-  const modalPanierContainerContent = document.getElementById(
-    "modalPanierContainerContent"
-  );
-  const cardHTML = createPanierItemHTML(item);
-  modalPanierContainerContent.appendChild(cardHTML);
-}
-// Fonction pour mettre à jour le panier
-function updatePanierDisplay() {
-  clearPanierContent();
-
-  const panierItems = JSON.parse(localStorage.getItem("panier")) || [];
-
-  panierItems.forEach((item) => {
-    displayPanierItem(item);
-  });
-
-  updateTotalPrice();
-}
-//Fonction pour mettre à jour la quantité d'un produit dans le local storage
-function updateQuantityInLocalStorage(productId, newQuantity) {
-  const panierItems = JSON.parse(localStorage.getItem("panier")) || [];
-  const targetItem = panierItems.find((item) => item.id === productId);
-
-  if (targetItem) {
-    targetItem.quantity = newQuantity;
-    setPanierInLocalStorage(panierItems);
-  }
-}
-
-//Fonction pour supprimer un produit
-function removeItemFromLocalStorage(articleId) {
-  let panierItems = getPanierFromLocalStorage();
-
-  // Filtrer les articles pour exclure celui à supprimer
-  panierItems = panierItems.filter((item) => item.id !== articleId);
-
-  // Met à jour le panier dans le localStorage
-  setPanierInLocalStorage(panierItems);
-}
-// Fonction qui averti l'utilisateur avant de tout supprimer
-function confirmAndClearLocalStorage() {
-  const confirmation = confirm(
-    "Êtes-vous sûr de vouloir vider votre panier ? Cela supprimera tout."
-  );
-
-  if (confirmation) {
-    clearLocalStorage();
-    // Vous pouvez ajouter d'autres actions ici si nécessaire
-  }
-}
-
-// Fonction pour vider le panier
-function clearLocalStorage() {
-  localStorage.clear();
-  updatePanierDisplay();
-}
-// Fonction pour récupérer le local storage
-function getPanierFromLocalStorage() {
-  return JSON.parse(localStorage.getItem("panier")) || [];
-}
-//Fonction pour mettre à jour le local storage
-function setPanierInLocalStorage(panierItems) {
-  localStorage.setItem("panier", JSON.stringify(panierItems));
-}
-
 //Création du panier
-function createPanierItemHTML(article) {
+function createPanierItemHTML(containerCible,article) {
   // Créer les éléments HTML
   const itemDiv = document.createElement("div");
   itemDiv.classList.add("modalPanierContainerContent");
@@ -202,7 +111,7 @@ function createPanierItemHTML(article) {
       setPanierInLocalStorage(panierItems);
 
       // Mettre à jour l'affichage du panier et le prix total
-      updatePanierDisplay();
+      updatePanierDisplay(containerCible);
     }
   });
 
@@ -224,7 +133,7 @@ function createPanierItemHTML(article) {
     }
 
     // Mettre à jour l'affichage du panier et le prix total
-    updatePanierDisplay();
+    updatePanierDisplay(containerCible);
   });
 
   const plusButton = document.createElement("button");
@@ -249,7 +158,7 @@ function createPanierItemHTML(article) {
       setPanierInLocalStorage(panierItems);
 
       // Mettre à jour l'affichage du panier et le prix total
-      updatePanierDisplay();
+      updatePanierDisplay(containerCible);
     }
   });
 
@@ -270,7 +179,7 @@ function createPanierItemHTML(article) {
     // Met à jour le panier dans le localStorage
     setPanierInLocalStorage(panierItems);
     // Mettre à jour l'affichage du panier et le prix total
-    updatePanierDisplay();
+    updatePanierDisplay(containerCible);
   });
 
   // Ajouter les boutons à la structure
@@ -290,7 +199,9 @@ function createPanierItemHTML(article) {
 //Ajout du produit au panier
 function addPanier(articleId,defaultQuantity=1) {
   const article = articlesMap[articleId];
-
+  const modalPanierContainerContent = document.getElementById(
+    "modalPanierContainerContent"
+  );
   if (article) {
     // Récupère le panier depuis le local storage
     let panierItems = JSON.parse(localStorage.getItem("panier")) || [];
@@ -314,12 +225,12 @@ function addPanier(articleId,defaultQuantity=1) {
 
       panierItems.push(newItem);
       // Appelle la fonction pour créer dynamiquement le contenu HTML de l'article dans la modal du panier
-      createPanierItemHTML(newItem);
+      createPanierItemHTML(modalPanierContainerContent,newItem);
     }
 
     // Met à jour le panier dans le local storage
     setPanierInLocalStorage(panierItems);
 
-    updatePanierDisplay();
+    updatePanierDisplay(modalPanierContainerContent);
   }
 }
