@@ -1,0 +1,75 @@
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &Container {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+
+        &ImagesFor {
+            width: 100%;
+        }
+
+        &ImagesNav {
+            display: flex;
+            width: 100%;
+            &Content{
+                margin: 2px;
+                border: 1px solid var(--bg-color-green-light);
+                border-radius: 4px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &ContainerContent {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-family: var(--font-family-1);
+
+        &Prix {
+            @extend .produitsContainerImageCardPrix;
+            text-align: center;
+        }
+
+        &Features {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            color: var(--color-text-black);
+        }
+
+        &Gestion {
+            @extend .modalPanierContainerContentGestion;
+
+            &Moins {
+
+                @extend .modalPanierContainerContentGestionMoins;
+
+            }
+
+            &Input {
+                @extend .modalPanierContainerContentGestionInput;
+
+            }
+
+            &Plus {
+                @extend .modalPanierContainerContentGestionMoins;
+
+            }
+        }
+
+        &Ajout {
+            @extend .produitsContainerImageCardBouton;
+            margin-top: 12px;
+
+        }
+    }
+}

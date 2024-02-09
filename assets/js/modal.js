@@ -288,7 +288,7 @@ function createPanierItemHTML(article) {
 }
 
 //Ajout du produit au panier
-function addPanier(articleId) {
+function addPanier(articleId,defaultQuantity=1) {
   const article = articlesMap[articleId];
 
   if (article) {
@@ -300,7 +300,7 @@ function addPanier(articleId) {
 
     if (existingItem) {
       // Si l'article est déjà dans le panier, mettez à jour la quantité
-      existingItem.quantity += 1;
+      existingItem.quantity += defaultQuantity;
     } else {
       // Sinon, ajoutez un nouvel élément au panier
       const newItem = {
@@ -309,7 +309,7 @@ function addPanier(articleId) {
         title: article.title,
         price: article.price,
         discount: article.discount,
-        quantity: 1,
+        quantity: defaultQuantity,
       };
 
       panierItems.push(newItem);

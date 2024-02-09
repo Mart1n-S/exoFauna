@@ -56,7 +56,6 @@ function createCards(container, article) {
       article.price *
       (1 - article.discount / 100)
     ).toFixed(2)}€`;
-    discountedPriceSpan.style.fontWeight = "bold";
 
     // Ajoute les éléments span pour la réduction et le prix remisé à la balise p
     price.appendChild(discountSpan);
@@ -96,7 +95,7 @@ function createCards(container, article) {
 
   // Crée un lien pour voir les détails
   const detailsLink = document.createElement("a");
-  detailsLink.href = `templates/detail.html?id=${article.id}`;
+  detailsLink.href = `templates/details.html?id=${article.id}`;
   detailsLink.classList.add("produitsContainerImageCardLien");
   detailsLink.textContent = "Voir détails";
 

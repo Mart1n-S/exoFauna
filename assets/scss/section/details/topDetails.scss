@@ -1,0 +1,13 @@
+.topDetails {
+   @extend .topCategorie;
+    &Container {
+        @extend .topCategorieContainer;
+  
+      &Description {
+        &Title {
+            @extend .topCategorieContainerDescriptionTitle;
+        }
+  
+      }
+    }
+  }
