@@ -119,6 +119,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 18px;
 }
 .modalPanierContainerContent, .panierCardContainerContent {
   display: flex;
@@ -133,6 +134,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  width: 70%;
 }
 .modalPanierContainerContentCard img, .panierCardContainerContentCard img {
   width: 30%;
@@ -289,6 +291,7 @@
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 .topAccueilContainerDescriptionTitle {
   font-size: 4em;
@@ -441,6 +444,44 @@
   color: var(--bg-color-green);
 }
 
+@media (max-width: 430px) {
+  .topAccueil {
+    padding: 90px 18px;
+  }
+  .topAccueilNeonContainer {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .topAccueilContainer {
+    text-align: center;
+  }
+  .topAccueilContainerImage img {
+    width: 100%;
+  }
+  .topAccueilContainerDescriptionTitle {
+    font-size: 3.5em;
+  }
+  .produits {
+    padding: 64px 18px;
+  }
+  .produitsInformation {
+    font-size: 1.5em;
+    margin-bottom: 64px;
+  }
+  .produitsDescription {
+    margin: 0 0 32px 0;
+  }
+  .produitsContainer {
+    padding: 0;
+  }
+  .slick-prev {
+    left: -4px;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 4px;
+  }
+}
 .topCategorie, .topDetails {
   display: flex;
   flex-direction: column;
@@ -516,6 +557,21 @@
   font-family: var(--font-family-1);
 }
 
+@media (max-width: 430px) {
+  .topCategorieContainerDescriptionTitle, .topDetailsContainerDescriptionTitle {
+    font-size: 3.5em;
+  }
+  .categorie {
+    padding: 32px 0;
+  }
+  .categorieFiltresContainer {
+    flex-direction: column;
+    padding: 12px;
+  }
+  .categorieContainer {
+    padding: 0;
+  }
+}
 .details {
   display: flex;
   flex-direction: row;
@@ -575,6 +631,17 @@
   font-family: var(--font-family-1);
   color: var(--color-text-black);
 }
+@media (max-width: 430px) {
+  .topDetailsContainerDescriptionTitle {
+    font-size: 2.5em;
+  }
+  .detailsContainerContent {
+    text-align: center;
+  }
+  .description {
+    padding: 64px 18px;
+  }
+}
 .panier {
   display: flex;
   justify-content: center;
@@ -601,6 +668,15 @@
 }
 .panierCardContainerBoutonLien {
   color: var(--text-color-white);
+}
+@media (max-width: 430px) {
+  .panier {
+    padding: 0;
+    height: 100vh;
+  }
+  .panierCard {
+    width: inherit;
+  }
 }
 .deliveryBody, .thanks {
   font-family: var(--font-family-1);
@@ -656,6 +732,36 @@
 }
 .thanksContentAction {
   align-self: center;
+}
+@media (max-width: 430px) {
+  .header {
+    padding: 16px;
+  }
+}
+@media (max-width: 430px) {
+  .modal {
+    width: 89%;
+  }
+  .modalPanier {
+    margin: 0;
+    width: inherit;
+    box-shadow: none;
+  }
+  .modalPanierContainer, .panierCardContainer {
+    gap: 12px;
+  }
+  .modalPanierContainerContent, .panierCardContainerContent {
+    gap: 4px;
+  }
+  .modalPanierContainerContent img, .panierCardContainerContent img {
+    width: 40%;
+  }
+  .modalPanierContainerContentCardText, .panierCardContainerContentCardText {
+    text-align: left;
+  }
+  .modalPanierContainerContentGestion, .detailsContainerContentGestion, .panierCardContainerContentGestion {
+    gap: 4px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

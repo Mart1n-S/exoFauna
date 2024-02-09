@@ -1,0 +1,52 @@
+@media (max-width: 430px) {
+    .topAccueil {
+        padding: 90px 18px;
+
+        &NeonContainer {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+
+        &Container {
+            text-align: center;
+
+            &Image {
+                img {
+                    width: 100%;
+                }
+            }
+
+            &Description {
+                &Title {
+                    font-size: 3.5em;
+                }
+            }
+        }
+    }
+
+    .produits {
+        padding: 64px 18px;
+
+        &Information {
+            font-size: 1.5em;
+            margin-bottom: 64px;
+        }
+
+        &Description {
+            margin:0 0 32px 0;
+        }
+
+        &Container {
+            padding: 0;
+        }
+    }
+
+    .slick-prev {
+        left: -4px;
+        z-index: 2;
+    }
+
+    .slick-next {
+        right: 4px;
+    }
+}
