@@ -88,3 +88,8 @@ function clearLocalStorage(container) {
   localStorage.clear();
   updatePanierDisplay(container);
 }
+
+// Fonction pour vider le panier quand on à commander
+function clearStorage() {
+  localStorage.clear();
+}

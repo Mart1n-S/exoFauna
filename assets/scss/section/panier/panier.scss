@@ -77,7 +77,9 @@
         &Bouton {
           @extend .modalPanierContainerBouton;
           &Lien{
-            color: var(--text-color-white)
+            color: var(--text-color-white);
+            display: flex;
+            align-items: center;
           }
         }
         &BoutonSupprimer {
