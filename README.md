@@ -26,4 +26,6 @@ ExoFauna est un projet développé dans le cadre d'un cours visant à pratiquer 
 
 Ce projet est principalement destiné à des fins pédagogiques et de démonstration. Il ne comprend pas de fonctionnalités complètes de commerce électronique ou de paiement en ligne réel.
 
+## Petit aperçu 👀
 
+![vue site](.github/images/view1.png)![vue site 2](.github/images/view2.png)![vue site 3](.github/images/view3.png)![vue site 4](.github/images/view4.png)![vue site 5](.github/images/view5.png)<br>
