@@ -1,16 +1,17 @@
 .categorie {
-  padding: 64px;
+  padding: 56px 64px;
 
   &Title {
     text-align: center;
     font-family: var(--font-family-1);
-    font-size: 28px;
+    font-size: 1.6em;
+    font-weight: 700;
   }
 
   &Filtres {
     display: flex;
     justify-content: center;
-    margin: 24px 0 64px 0;
+    margin: 24px 0 56px 0;
     font-family: var(--font-family-1);
     font-weight: 600;
 
@@ -18,21 +19,57 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 16px;
-      background-color: var(--bg-color-green-light);
-      padding: 12px 64px;
-      border-radius: 4px;
+      flex-wrap: wrap;
+      gap: 14px;
+      background-color: var(--bg-color-white);
+      border: 1px solid #eceeec;
+      padding: 18px 28px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+
+      label {
+        color: var(--color-text-muted);
+        font-size: 0.95em;
+      }
+
+      select {
+        font-family: var(--font-family-1);
+        font-weight: 600;
+        color: var(--color-text-black);
+        background-color: var(--bg-color-white-2);
+        padding: 10px 14px;
+        border: 1px solid #d8dcd9;
+        border-radius: var(--radius-pill);
+        cursor: pointer;
+        transition: border-color var(--transition), box-shadow var(--transition);
+
+        &:hover {
+          border-color: var(--green-500);
+        }
+
+        &:focus {
+          outline: none;
+          border-color: var(--green-500);
+          box-shadow: 0 0 0 3px var(--bg-color-green-light);
+        }
+      }
 
       &Bouton {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
         color: var(--color-text-white);
         background-color: var(--color-text-green-flash);
-        box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
-        border-radius: 12px;
+        box-shadow: var(--shadow-sm);
+        border-radius: var(--radius-pill);
+        transition: background-color var(--transition), transform var(--transition);
 
         &:hover {
           cursor: pointer;
           background-color: var(--bg-color-green-hover);
-
+          transform: rotate(-30deg);
         }
       }
     }
@@ -40,8 +77,8 @@
 
   &Container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 48px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 32px;
     padding: 0 32px;
 
     &Image {

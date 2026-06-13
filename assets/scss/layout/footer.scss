@@ -3,28 +3,42 @@
   background-color: var(--bg-color-dark);
   color: var(--color-text-white);
   text-align: center;
-  padding: 20px;
+  padding: 32px clamp(20px, 8vw, 164px);
 
   &Content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
 
     &Left {
       flex: 1;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.95em;
     }
 
     &Right {
       @extend .footerContentLeft;
+      text-align: right;
 
       &Social {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
+        gap: 14px;
 
         &Icons {
-          font-size: 20px;
-          margin-left: 10px;
+          font-size: 22px;
+          color: rgba(255, 255, 255, 0.75);
+          transition: color var(--transition), transform var(--transition);
+
+          &:hover {
+            cursor: pointer;
+            color: var(--green-500);
+            transform: translateY(-2px);
+          }
         }
       }
     }

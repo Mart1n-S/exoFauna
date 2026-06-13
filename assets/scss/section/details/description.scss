@@ -1,21 +1,22 @@
 .description {
-    padding: 64px 256px;
+    padding: 32px clamp(18px, 18vw, 256px) 80px;
 
     &Content {
-        padding: 32px;
-        border-radius: 4px;
-        box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
-        background-color: var(--bg-color-green-light);
+        padding: 36px 40px;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+        background-color: var(--bg-color-white);
+        border: 1px solid #eceeec;
+        border-left: 4px solid var(--green-500);
 
         &Texte {
             font-family: var(--font-family-1);
             color: var(--color-text-black);
-
+            line-height: 1.8;
         }
 
         &Button {
             @extend .produitsContainerImageCardBouton;
         }
     }
-
 }

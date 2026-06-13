@@ -1,33 +1,35 @@
 .thanks {
     @extend .deliveryBody;
-    height: 84vh;
-    padding: 0 64px;
+    padding: 64px;
 
     &Content {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
         background-color: var(--bg-color-white);
-        padding: 20px;
-        border-radius: 4px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 48px 40px;
+        max-width: 560px;
+        border: 1px solid #eceeec;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
 
         &Title {
             @extend .deliveryBodyContainerTitle;
         }
 
         &Text {
-            color: var(--color-text-dark);
+            color: #4a5158;
+            line-height: 1.7;
         }
 
         &Action {
             align-self: center;
-        
 
             &Bouton {
                 @extend .deliveryBodyContainerFormBouton;
             }
         }
-
     }
 }

@@ -2,13 +2,31 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
 }
+
+body {
+  font-family: var(--font-family-1);
+  color: var(--color-text-black);
+  background-color: var(--bg-color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   background-color: var(--bg-color-green);
   color: var(--color-text-white);
-  padding: 16px 164px;
+  padding: 16px clamp(20px, 8vw, 164px);
+  box-shadow: var(--shadow);
+  backdrop-filter: saturate(1.1);
 
   &Navigation {
     display: flex;
@@ -19,28 +37,62 @@
     &Logo {
       display: flex;
       align-items: center;
+
+      img {
+        height: 40px;
+        transition: transform var(--transition);
+      }
+
+      &:hover img {
+        transform: rotate(-6deg) scale(1.05);
+      }
+
       &Text {
         font-family: var(--font-family-1);
-        font-size: 1.3em;
-        font-weight: bold;
+        font-size: 1.35em;
+        font-weight: 800;
+        letter-spacing: 0.3px;
         margin-left: 12px;
-        &Lien{
+
+        &Lien {
           text-decoration: none;
-          color: var(--text-color-white);
+          color: var(--color-text-white);
         }
       }
     }
 
     &Links {
       display: flex;
-      gap: 40px;
+      gap: 28px;
       align-items: center;
       font-family: var(--font-family-1);
+      font-weight: 600;
+
       &Text {
+        position: relative;
         color: var(--color-text-white);
+        transition: color var(--transition);
+
         &:hover {
           cursor: pointer;
-          color: var(--color-text-muted);
+          color: var(--green-100);
+        }
+      }
+
+      .material-symbols-outlined,
+      #panier {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: var(--radius-pill);
+        transition: background-color var(--transition), transform var(--transition);
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.18);
+          transform: translateY(-1px);
         }
       }
     }

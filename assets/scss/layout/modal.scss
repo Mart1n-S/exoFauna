@@ -1,4 +1,4 @@
-/* Style de la modal */
+/* Style de la modal (panier latéral) */
 .modal {
   display: none;
   position: fixed;
@@ -6,51 +6,65 @@
   font-family: var(--font-family-1);
   top: 0;
   right: -100%;
-  width: 35%;
+  width: 38%;
   height: 100%;
   background-color: var(--bg-color-white);
-  box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
-  transition: right 0.8s;
-  z-index: 1;
+  box-shadow: var(--shadow-lg);
+  transition: right 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 20;
 
   &Panier {
     background-color: var(--bg-color-white);
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
+    margin: 0;
+    padding: 32px 28px;
+    width: 100%;
     position: relative;
+
+    h2 {
+      font-size: 1.6em;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
 
     &Container {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 18px;
+      align-items: stretch;
+      gap: 14px;
+
       &Content {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         flex-direction: row;
-        background-color: var(--bg-color-green-light);
-        border-radius: 4px;
-        padding: 8px;
-        margin-bottom: 12px;
+        background-color: var(--bg-color-white-2);
+        border: 1px solid #ececec;
+        border-radius: var(--radius);
+        padding: 12px;
+        margin-bottom: 4px;
+        transition: box-shadow var(--transition);
+
+        &:hover {
+          box-shadow: var(--shadow-sm);
+        }
 
         &Card {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 14px;
           width: 70%;
 
           img {
             width: 30%;
+            border-radius: var(--radius-sm);
           }
 
           &Text {
-            text-align: center;
+            text-align: left;
 
             &Titre {
               margin-bottom: 4px;
+              font-weight: 700;
             }
 
             &Prix {
@@ -58,7 +72,7 @@
 
               >span:nth-child(1) {
                 text-decoration: line-through;
-                color: var(--color-text-red);
+                color: var(--color-text-muted);
               }
 
               >span:nth-child(2) {
@@ -78,17 +92,21 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 16px;
+          gap: 12px;
 
           &Moins {
-            padding: 2px;
-            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: var(--radius-pill);
             background-color: var(--color-text-green-flash);
             color: var(--color-text-white);
+            transition: background-color var(--transition);
 
             span {
-              font-size: 1.4em;
-              margin-top: 2px;
+              font-size: 1.3em;
             }
 
             &:hover {
@@ -103,27 +121,31 @@
           }
 
           &Input {
-            width: 32px;
-            padding: 4px;
+            width: 38px;
+            padding: 6px;
             margin: 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            text-align: center;
+            border: 1px solid #d8dcd9;
+            border-radius: var(--radius-sm);
           }
 
           &Plus {
             @extend .modalPanierContainerContentGestionMoins;
-
           }
 
           &Delete {
-            padding: 2px;
-            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: var(--radius-pill);
             background-color: var(--bg-color-red);
             color: var(--color-text-white);
+            transition: background-color var(--transition);
 
             span {
-              font-size: 1.4em;
-              margin-top: 2px;
+              font-size: 1.3em;
             }
 
             &:hover {
@@ -137,38 +159,47 @@
       &Prix {
         color: var(--color-text-black) !important;
         margin-top: 8px;
-        font-weight: 600;
+        font-size: 1.15em;
+        font-weight: 700;
       }
 
       &Bouton {
         @extend .produitsContainerImageCardBouton;
         display: flex;
         align-items: center;
+        justify-content: center;
+        gap: 6px;
         margin-top: 8px;
       }
 
       &BoutonSupprimer {
         display: flex;
         align-items: center;
-        margin-top: 8px;
-        padding: 8px;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 4px;
+        padding: 10px 16px;
         font-size: 1em;
-        border-radius: 4px;
-        border: 1px var(--color-text-red) solid;
+        font-weight: 600;
+        border-radius: var(--radius-pill);
+        border: 1.5px solid var(--color-text-red);
         color: var(--color-text-red);
-        box-shadow: 1px 2px 2px 1px var(--bg-box-shadow);
         background-color: var(--bg-color-white);
+        transition: background-color var(--transition), color var(--transition);
 
         &:hover {
           cursor: pointer;
-          background-color: var(--bg-color-red-hover);
+          background-color: var(--bg-color-red);
+          color: var(--color-text-white);
         }
       }
 
       &BoutonLien {
         color: var(--color-text-black);
         text-decoration: underline;
+        text-align: center;
         margin-top: 8px;
+        transition: color var(--transition);
 
         &:hover {
           color: var(--color-text-green-flash);
@@ -180,11 +211,14 @@
 
 .close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 2.5em;
+  top: 16px;
+  right: 18px;
+  font-size: 2.2em;
+  line-height: 1;
   font-weight: bold;
+  color: var(--color-text-muted);
   cursor: pointer;
+  transition: color var(--transition);
 
   &:hover,
   &:focus {

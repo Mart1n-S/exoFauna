@@ -3,7 +3,10 @@
   flex-direction: column;
   align-items: center;
   font-family: var(--font-family-1);
-  padding: 90px 64px 0 64px;
+  padding: 80px 64px 0 64px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, var(--green-50) 0%, transparent 65%),
+    var(--bg-color-white);
 
   &Container {
     display: flex;
@@ -14,13 +17,20 @@
 
     &Description {
       &Title {
-        font-size: 4em;
+        font-size: 3.6em;
+        font-weight: 800;
+        letter-spacing: -1px;
         text-transform: uppercase;
+        background: linear-gradient(120deg, var(--green-600), var(--green-500));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       &SubTitle {
         color: var(--color-text-muted);
         font-style: italic;
+        margin-top: 8px;
       }
     }
   }

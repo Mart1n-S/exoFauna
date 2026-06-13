@@ -1,21 +1,29 @@
 .deliveryBody {
     font-family: var(--font-family-1);
-    background-color: var(--bg-color-white-2);
+    background:
+        radial-gradient(110% 70% at 50% 0%, var(--green-50) 0%, transparent 60%),
+        var(--bg-color-white-2);
     margin: 0;
-    padding: 0;
+    padding: 64px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    min-height: 90vh;
 
     &Container {
         background-color: var(--bg-color-white);
-        padding: 20px;
-        border-radius: 4px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        width: 100%;
+        max-width: 460px;
+        border: 1px solid #eceeec;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
 
         &Title {
             text-align: center;
+            font-size: 1.8em;
+            font-weight: 800;
+            margin-bottom: 24px;
         }
 
         &Form {
@@ -23,19 +31,34 @@
             flex-direction: column;
 
             &Label {
-                margin-top: 10px;
+                margin-top: 12px;
+                font-weight: 600;
+                font-size: 0.95em;
+                color: var(--color-text-muted);
             }
 
             &Champ {
-                margin-bottom: 15px;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
+                margin-top: 6px;
+                margin-bottom: 12px;
+                padding: 12px 14px;
+                border: 1px solid #d8dcd9;
+                border-radius: var(--radius-sm);
+                font-family: var(--font-family-1);
+                transition: border-color var(--transition), box-shadow var(--transition);
+
+                &:focus {
+                    outline: none;
+                    border-color: var(--green-500);
+                    box-shadow: 0 0 0 3px var(--bg-color-green-light);
+                }
             }
 
             &Bouton {
                 @extend .modalPanierContainerBouton;
                 justify-content: center;
+                margin-top: 16px;
+                padding: 14px 24px;
+                font-size: 1.05em;
             }
         }
     }

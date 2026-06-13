@@ -4,25 +4,46 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    gap: 48px;
+    padding: 24px 64px 64px;
 
     &Container {
         display: flex;
         flex-direction: column;
-        width: 400px;
+        gap: 12px;
+        width: 420px;
 
         &ImagesFor {
             width: 100%;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+
+            img {
+                border-radius: var(--radius);
+            }
         }
 
         &ImagesNav {
             display: flex;
             width: 100%;
-            &Content{
-                margin: 2px;
-                border: 1px solid var(--bg-color-green-light);
-                border-radius: 4px;
-                &:hover{
+            gap: 8px;
+
+            &Content {
+                margin: 0;
+                border: 2px solid transparent;
+                border-radius: var(--radius-sm);
+                overflow: hidden;
+                transition: border-color var(--transition), transform var(--transition);
+
+                img {
+                    border-radius: var(--radius-sm);
+                }
+
+                &:hover {
                     cursor: pointer;
+                    border-color: var(--green-500);
+                    transform: translateY(-2px);
                 }
             }
         }
@@ -31,45 +52,53 @@
     &ContainerContent {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 16px;
+        max-width: 420px;
         font-family: var(--font-family-1);
+
+        &Titre {
+            font-size: 2.2em;
+            font-weight: 800;
+        }
 
         &Prix {
             @extend .produitsContainerImageCardPrix;
-            text-align: center;
+            font-size: 1.3em;
+            text-align: left;
         }
 
         &Features {
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 8px;
             color: var(--color-text-black);
+            padding: 16px 18px;
+            background-color: var(--bg-color-green-light);
+            border-radius: var(--radius);
         }
 
         &Gestion {
             @extend .modalPanierContainerContentGestion;
+            justify-content: flex-start;
 
             &Moins {
-
                 @extend .modalPanierContainerContentGestionMoins;
-
             }
 
             &Input {
                 @extend .modalPanierContainerContentGestionInput;
-
             }
 
             &Plus {
                 @extend .modalPanierContainerContentGestionMoins;
-
             }
         }
 
         &Ajout {
             @extend .produitsContainerImageCardBouton;
-            margin-top: 12px;
-
+            margin-top: 8px;
+            padding: 14px 24px;
+            font-size: 1.05em;
         }
     }
 }

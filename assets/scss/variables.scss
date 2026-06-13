@@ -1,20 +1,49 @@
 :root {
-  --color-text-white: #fff;
-  --color-text-black: #000000;
-  --color-text-muted: #b4b4b4;
-  --color-text-green-flash: #03c703;
-  --color-text-red: #ff0000;
+  /* ----- Palette de marque (vert ExoFauna) ----- */
+  --green-50: #e9f7ef;
+  --green-100: #d2efe0;
+  --green-200: #a7dec3;
+  --green-500: #30a46c; /* couleur signature */
+  --green-600: #1f8d59;
+  --green-700: #156c45;
+
+  /* ----- Texte ----- */
+  --color-text-white: #ffffff;
+  --color-text-black: #1a1d1f;
+  --color-text-muted: #8a9099;
+  --color-text-green-flash: #1f8d59; /* CTA : ancien vert flash, adouci */
+  --color-text-red: #e5484d;
   --color-text-green-neon: #b7f700;
+  --color-text-dark: #1a1d1f;
+
+  /* ----- Fonds ----- */
   --bg-color-green: #30a46c;
-  --bg-color-red: #ff0000;
-  --bg-color-red-hover: #ffa1a1;
-  --bg-color-green-hover: #009600;
-  --bg-color-white: #fff;
-  --bg-color-white-2: #f4f4f4;
-  --bg-color-white-hover: #e9e9e9;
-  --bg-color-black: #000000;
-  --bg-color-dark: #333;
-  --bg-color-green-light: #30a46c57;
-  --bg-box-shadow: #00000026;
-  --font-family-1: "Manrope", Helvetica;
+  --bg-color-red: #e5484d;
+  --bg-color-red-hover: #d13b40;
+  --bg-color-green-hover: #156c45;
+  --bg-color-white: #ffffff;
+  --bg-color-white-2: #f6f8f7;
+  --bg-color-white-hover: #eef1ef;
+  --bg-color-black: #14171a;
+  --bg-color-dark: #1b2024;
+  --bg-color-green-light: rgba(48, 164, 108, 0.1);
+  --bg-box-shadow: rgba(16, 24, 40, 0.12);
+
+  /* ----- Typographie ----- */
+  --font-family-1: "Manrope", "Poppins", Helvetica, sans-serif;
+
+  /* ----- Rayons ----- */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  /* ----- Ombres douces et superposées ----- */
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.08);
+  --shadow: 0 6px 18px rgba(16, 24, 40, 0.08);
+  --shadow-lg: 0 18px 40px rgba(16, 24, 40, 0.14);
+  --shadow-green: 0 8px 20px rgba(31, 141, 89, 0.28);
+
+  /* ----- Transitions ----- */
+  --transition: 0.25s ease;
 }
